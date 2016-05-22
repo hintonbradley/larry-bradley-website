@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: helvetica, arial;
+}
+body:after {
+  content: url(../images/garage.png) url(../images/mailbox.jpg) url(../images/cats.jpg) url(../images/food.jpg) url(../images/muther.jpg);
+  display: none;
+}
+h1 {
+  color: white;
+  height: 40px;
+  font-size: 74px;
+  font-weight: normal;
+  left: 0;
+  z-index: 1;
+  text-shadow: 0 2px 0 black, 0 0 10px black;
+}
+.parallax {
+  position:absolute;
+  left: 0;
+  top: 0;
+}
+.photo {
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  height: 800px;
+  position: relative;
+  /*adding to have image span full width*/
+  background-size: cover;
+}
+
+.non-photo {
+	padding: 50px 10px;
+/*  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: no-repeat;*/
+  height: 600px;
+  position: relative;
+  /*adding to have image span full width*/
+  /*background-size: cover;*/
+}
+
+
+.photo span {
+	/*removing to move text to middle of div*/
+  /*bottom: 0;*/
+  color: white;
+  display: block;
+  left: 50%;
+  margin-left: -640px;
+  font-size: 38px;
+  padding: 10px;
+  position: absolute;
+  text-shadow: 0 2px 0 black, 0 0 10px black;
+  width: 100%;
+  /*width: 1280px;*/
+}
+.food {
+  background-image: url(../images/food.jpg);
+}
+.cats {
+  background-image: url(../images/cats.jpg);
+}
+.garage {
+  background-image: url(../images/garage.png);
+}
+.mailbox {
+  background-image: url(../images/mailbox.jpg);
+}

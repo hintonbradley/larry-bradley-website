@@ -1,5 +1,5 @@
 (function() {
-angular.module('LarryBradley', ['ui.router','angular-parallax'])
+angular.module('LarryBradley', ['ui.router','angular-parallax','ui.bootstrap','ngAnimate'])
 	.config(function($stateProvider, $urlRouterProvider) {
 
 	$urlRouterProvider.otherwise('/');
@@ -7,13 +7,23 @@ angular.module('LarryBradley', ['ui.router','angular-parallax'])
 	$stateProvider
 		.state('mailboxes', {
 			url: '/mailboxes',
-			templateUrl: 'app/mailboxes/mailboxes.html',
+			templateUrl: 'app/views/mailboxes.html',
 			controller: 'MailboxesController'
 		})
 	    .state('main', {
             url: "/",
-            templateUrl: "app/main/main.html",
+            templateUrl: "app/views/main.html",
             controller: "MainController"
+        })
+        .state('birdhouses', {
+            url: "/birdhouses",
+            templateUrl: "app/views/birdhouses.html",
+            controller: "BirdhousesController"
+        })
+        .state('slideshow', {
+            url: "/slideshow",
+            templateUrl: "app/views/slideshow.html",
+            controller: "SlideshowController"
         })
 	})
 }());

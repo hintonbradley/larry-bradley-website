@@ -1,0 +1,46 @@
+/*mailbox page*/
+
+#mailboxes .small-mailbox1 {
+  height: 400px;
+  width: 400px;
+  border-radius: 200px;
+  background-image: url(../images/mbx1.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  border-top: 100px;
+}
+
+
+
+#mailboxes .small-mailbox2 {
+  height: 400px;
+  width: 400px;
+  border-radius: 200px;
+  background-image: url(../images/mbx2.1.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  border-top: 100px;
+}
+
+#mailboxes ul {
+  margin-left: 1.5em;
+}
+
+#mailboxes .container {
+  height: 550px;
+}
+
+#mailboxes .container2 {
+  position: relative;
+  height: 550px;
+}
+
+#mailboxes .jumbotron2 {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width: 90%;
+}

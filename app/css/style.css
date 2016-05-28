@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: avant garde;
+  background-color: #333333;
+}
+body:after {
+  content: url(../images/garage.jpg) url(../images/mbx1.jpg) url(../images/mbx2.1.jpg) url(../images/mbx2.jpg) url(../images/mbx3.jpg);
+  display: none;
+}
+h1 {
+  color: white;
+  height: 40px;
+  font-size: 74px;
+  font-weight: normal;
+  left: 0;
+  z-index: 1;
+  text-shadow: 0 2px 0 black, 0 0 10px black;
+}
+.parallax {
+  position:absolute;
+  left: 0;
+  top: 0;
+}
+.photo {
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  height: 700px;
+  position: relative;
+  /*adding to have image span full width*/
+  background-size: cover;
+}
+
+.non-photo {
+	padding: 50px 10px;
+/*  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: no-repeat;*/
+  height: 600px;
+  position: relative;
+  /*adding to have image span full width*/
+  /*background-size: cover;*/
+  background-color: #333333;
+  color: #B0C1CB;
+/*#0D293F*/
+/*#0B233B*/
+
+/*#BFCDD8 */
+}
+
+
+.photo span {
+	/*removing to move text to middle of div*/
+  /*bottom: 0;*/
+  color: white;
+  display: block;
+  left: 50%;
+  margin-left: -640px;
+  font-size: 38px;
+  padding: 10px;
+  position: absolute;
+  text-shadow: 0 2px 0 black, 0 0 10px black;
+  width: 100%;
+  /*width: 1280px;*/
+}
+.mbx3 {
+  background-image: url(../images/mbx3.jpg);
+}
+/*.cats {
+  background-image: url(../images/cats.jpg);
+}*/
+.garage {
+  background-image: url(../images/garage.jpg);
+}
+.mailbox1 {
+  background-image: url(../images/mbx1.jpg);
+}
+.mailbox2 {
+  background-image: url(../images/mbx2.2.jpg);
+}
+
+
+/*navbar dropdown*/
+
+.dropdown-toggle {
+    background-color: transparent;
+    border: none;
+    color: #B0C1CB;
+    margin-top: 5px;
+}
+
+.dropdown-toggle:hover {
+  background-color: transparent;
+  color: #B0C1CB;
+}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover{
+  background-color: transparent;
+  color: #B0C1CB;
+}
+
+.btn-group.open .dropdown-toggle {
+  box-shadow: none;
+}
+
+.navbar .nav > li {
+z-index: 10000;
+}
+
+.dropdown-menu {
+  z-index: 1050
+}
+
+.navbar-brand, .nav .btn {
+  font-size: 20px;
+}
+
+.navbar-right .btn-group {
+  padding-right: 15px;
+}
+
+.navbar {
+  background-color: #933B4B;
+  margin-bottom: 0px;
+  border: none;
+}
+
+.navbar-default, .navbar-brand {
+  color: #B0C1CB !important;
+}
+
+/*parallax*/
+.gray {
+  background-color: #333333;
+}
+
+.container {
+  width: 100% !important;
+}

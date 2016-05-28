@@ -1,0 +1,38 @@
+
+<!-- <div ng-controller="ParallaxExampleCtrl"> -->
+<div id="main-page" ng-controller="MainController">
+  <div class="slides-div">
+    <carousel interval="myInterval" no-pause=true>
+      <slide ng-repeat="slide in slides" active="slide.active" no-pause=true>
+        <img ng-src="{{slide.image}}">
+        <div class="carousel-caption">
+          <h4>{{slide.text}}</h4>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+  <div class="container gray">
+    <div class="row">
+      <div class="col-sm-6">
+        <!-- <div class="container2 theme-showcase" role="main">
+        <div class="jumbotron2"> -->
+            <div class="small-lbphoto"></div>
+            <h2>Mailbox with siding and tiered roof</h2>
+          <!-- </div>
+          </div> -->
+      </div>
+      <div class="col-sm-6">
+        <!-- <div class="container2 theme-showcase" role="main">
+        <div class="jumbotron2 no-padding"> -->
+                <ul>
+                  <li>Designer</li>
+                  <li>Woodworker</li>
+                  <li>Craftsman</li>
+                </ul>
+            </h2>
+          <!-- </div>
+          </div> -->
+      </div>
+    </div>
+  </div>
+</div>

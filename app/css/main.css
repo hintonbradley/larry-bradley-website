@@ -8,7 +8,6 @@
 #main-page .slides-div {
   max-height:500px; 
   margin: 0 auto;
-  margin-top: 50px;
 }
 
 #main-page .carousel-inner {
@@ -28,7 +27,7 @@
 }
 
 #main-page {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 #testing-navbar {
@@ -41,12 +40,6 @@
     height: 100%;
     width: 80%;
     margin: auto;
-}
-
-.slides-div {
-  max-height:500px; 
-  margin: 0 auto;
-  margin-top: 50px;
 }
 
 .carousel-inner {
@@ -74,11 +67,22 @@ img {
   background-size: cover;
   background-position: top;
   margin: 0 auto;
-  border-top: 100px;
+  margin-top: 4em;
 }
 
 #main-page li {
-  font-size: 4em;
+  font-size: 5em;
   text-shadow: 2px 2px #933B4B;
   color: #B0C1CB;
+}
+
+#main-page .name {
+  font-size: 5em;
+  text-shadow: 2px 2px #933B4B;
+  color: #B0C1CB;
+  text-align: center;
+}
+
+.lb-info {
+  margin-top: 50px;
 }

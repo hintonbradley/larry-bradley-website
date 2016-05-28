@@ -12,7 +12,6 @@
 }
 
 
-
 #mailboxes .small-mailbox2 {
   height: 400px;
   width: 400px;
@@ -43,4 +42,9 @@
   left:50%;
   transform: translate(-50%,-50%);
   width: 90%;
+}
+
+.allComments {
+  color: white;
+  margin-left: 50px;
 }

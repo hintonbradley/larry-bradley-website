@@ -7,6 +7,8 @@ var app = express();
 //CONNECT TO DATABASE:
 mongoose.connect('mongodb://localhost:27017/larrybradley');
 
+app.use(bodyParser.json());
+
 // Invoking middleware for paths for app and node_modules directories:
 app.use('/app', express.static(__dirname + "/app"));
 app.use('/node_modules', express.static(__dirname + "/node_modules"));
@@ -20,6 +22,15 @@ app.get('/', function(req, res) {
 	res.sendFile(__dirname + '/index.html');
 });
 
+// Requiring controllers:
+var commentsController = require('./server/controllers/comments-controller');
+
+
+// POST COMMENTS
+// Authentication
+// Creating a post request equal to the post route created in the signup-controller (api/user/signup), and then calling the signup function inside the commentsController
+app.post('/api/mailboxes/post', commentsController.postComment);
+app.get('/api/mailboxes/get', commentsController.getComments);
 
 app.listen('3000', function(){
 	console.log("I'm listening for Larry!");

@@ -55,3 +55,33 @@
 	    </div>
 	  </div>
 	</div>
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="row">
+				<strong>Name</strong>
+				<input type="text" ng-model="newComment.name" class="form-control"></input>
+			</div>
+			<div class="row">
+				<strong>Description</strong>
+				<input type="text" ng-model="newComment.description" class="form-control"></input>
+			</div>
+			<button ng-click="sendComment()">Submit</button>
+		</div>
+	</div>
+	<div class="row">
+		<table class="allComments">
+			<tr ng-repeat="comment in comments">
+				<td>
+					{{comment.name}}
+				</td>
+				<td>
+					{{comment.description}}
+				</td>
+				<td>
+					{{comment.date | date: 'MM/dd/yyyy hh:mm'}}
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+

@@ -1,5 +1,9 @@
 /*mailbox page*/
 
+#mailboxes .grey {
+  margin-top: 50px;
+}
+
 #mailboxes .small-mailbox1 {
   height: 400px;
   width: 400px;
@@ -47,4 +51,19 @@
 .allComments {
   color: white;
   margin-left: 50px;
+}
+
+.slides-div {
+  margin-top: 115px;
+  max-height: 340px;
+}
+
+img {
+  max-height: 340px;
+}
+
+hr {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }

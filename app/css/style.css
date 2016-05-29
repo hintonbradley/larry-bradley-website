@@ -5,13 +5,18 @@
 body {
   font-family: avant garde;
   background-color: #333333;
+  color: #B0C1CB;
 }
+
+.text-ctr {
+  text-align: center;
+}
+
 body:after {
   content: url(../images/garage.jpg) url(../images/mbx1.jpg) url(../images/mbx2.1.jpg) url(../images/mbx2.jpg) url(../images/mbx3.jpg);
   display: none;
 }
 h1 {
-  color: white;
   height: 40px;
   font-size: 74px;
   font-weight: normal;
@@ -34,17 +39,17 @@ h1 {
   background-size: cover;
 }
 
-.non-photo {
-	padding: 50px 10px;
+/*.non-photo {*/
+/*	padding: 50px 10px;*/
 /*  background-attachment: fixed;
   background-position: 50% 0;
   background-repeat: no-repeat;*/
-  height: 600px;
-  position: relative;
+/*  height: 600px;
+  position: relative;*/
   /*adding to have image span full width*/
   /*background-size: cover;*/
-  background-color: #333333;
-  color: #B0C1CB;
+/*  background-color: #333333;
+  color: #B0C1CB;*/
 /*#0D293F*/
 /*#0B233B*/
 
@@ -55,7 +60,6 @@ h1 {
 .photo span {
 	/*removing to move text to middle of div*/
   /*bottom: 0;*/
-  color: white;
   display: block;
   left: 50%;
   margin-left: -640px;

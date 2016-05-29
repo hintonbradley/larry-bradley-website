@@ -6,7 +6,7 @@
 }
 
 #main-page .slides-div {
-  max-height:500px; 
+  max-height:400px; 
   margin: 0 auto;
 }
 
@@ -16,9 +16,9 @@
 
 #main-page img {
   height: 100%;
-  max-height: 500px;
+  max-height: 400px;
   margin: 0 auto;
-  width: 100%;
+  width: 80%;
 }
 
 /*carousel*/
@@ -34,55 +34,95 @@
   margin-top: 200px;
 }
 
-/*slider*/
+/*other*/
 
-.item {
-    height: 100%;
-    width: 80%;
-    margin: auto;
-}
-
-.carousel-inner {
-  height: 100%;
-}
-
-img {
-  height: 100%;
-  max-height: 500px;
-  margin: 0 auto;
-  width: 80%;
-}
-
-.blue {
+.non-photo {
+  padding: 0px 10px;
+/*  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: no-repeat;*/
+  height: 700px;
+  position: relative;
+  /*adding to have image span full width*/
+  /*background-size: cover;*/
   background-color: #333333;
-  color: red;
-  height: 210px;
+  color: #B0C1CB;
+/*#0D293F*/
+/*#0B233B*/
+
+/*#BFCDD8 */
 }
 
-.small-lbphoto {
-  height: 200px;
-  width: 200px;
-  border-radius: 100px;
+#main-page .small-lbphoto {
+  height: 400px;
+  width: 400px;
+  border-radius: 200px;
   background-image: url(../images/xmas.jpg);
   background-size: cover;
   background-position: top;
   margin: 0 auto;
-  margin-top: 4em;
+  margin-top: 3em;
 }
 
-#main-page li {
-  font-size: 5em;
+#main-page .lb-info {
+  margin-bottom: 50px;
+}
+
+#main-page .name li {
   text-shadow: 2px 2px #933B4B;
   color: #B0C1CB;
 }
 
-#main-page .name {
+#main-page .name p {
   font-size: 5em;
   text-shadow: 2px 2px #933B4B;
   color: #B0C1CB;
   text-align: center;
+  margin-bottom: 0px;
 }
 
-.lb-info {
+/*Removed for new main page layout*/
+/*.lb-info {
   margin-top: 50px;
+}*/
+
+.inline-block, .inline-block li {
+  /* Setting a common base */
+  margin: 0;
+  padding: 0;
+}
+
+.inline-block li {
+  display: inline-block;
+  font-size: 3.5em;
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 20px;
+}
+
+.inline-block ul {
+  text-align: center;
+}
+
+.contact {
+  padding-top: 100px;
+  text-align: center;
+  font-size: 2em;
+}
+
+.lb-about {
+  padding-right: 4em;
+  padding-top: 50px;
+}
+
+.lb-about ul {
+  padding-left: 25px;
+}
+
+#main-page .carousel-caption {
+  text-shadow: 2px 2px #333333;
+}
+
+#main-page .projects li {
+  width: 49%;
 }

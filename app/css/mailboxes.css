@@ -1,6 +1,6 @@
 /*mailbox page*/
 
-#mailboxes .grey {
+#mailboxes .gray {
   margin-top: 50px;
 }
 
@@ -8,7 +8,7 @@
   height: 400px;
   width: 400px;
   border-radius: 200px;
-  background-image: url(../images/mbx1.jpg);
+  background-image: url(../images/mailboxes/mbx1.jpg);
   background-size: cover;
   background-position: center;
   margin: 0 auto;
@@ -20,24 +20,11 @@
   height: 400px;
   width: 400px;
   border-radius: 200px;
-  background-image: url(../images/mbx2.1.jpg);
+  background-image: url(../images/mailboxes/mbx2.1.jpg);
   background-size: cover;
   background-position: center;
   margin: 0 auto;
   border-top: 100px;
-}
-
-#mailboxes ul {
-  margin-left: 1.5em;
-}
-
-#mailboxes .container {
-  height: 550px;
-}
-
-#mailboxes .container2 {
-  position: relative;
-  height: 550px;
 }
 
 #mailboxes .jumbotron2 {
@@ -54,16 +41,10 @@
 }
 
 .slides-div {
-  margin-top: 115px;
+  margin-top: 10px;
   max-height: 340px;
 }
 
 img {
   max-height: 340px;
-}
-
-hr {
-  width: 90%;
-  margin: 0 auto;
-  margin-bottom: 20px;
 }

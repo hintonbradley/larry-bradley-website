@@ -1,0 +1,103 @@
+<div id="birdhouses" class="project-page" ng-controller="BirdhousesController">
+	<div class="gray full-container">
+		<h1 class="text-ctr title-padding">5-Chamber Design</h1>
+		<div class="container project">
+		  	<div class="row">
+		    	<div class="col-sm-6">
+			    	<div class="slides-div">
+				    	<carousel interval="myInterval" no-pause=true>
+					      	<slide ng-repeat="slide in siding" active="slide.active" no-pause=true>
+					        	<img ng-src="{{slide.image}}">
+					        	<div class="carousel-caption">
+					          		<h2>{{slide.text}}</h2>
+					        	</div>
+					      	</slide>
+				    	</carousel>
+				  	</div>
+				</div>
+				<div class="col-sm-6">
+					<h1></h1>
+	  				<h2>This birdhouse was built in 2015 and designed from a photograph of the client's childhood home.<br><br>Features:
+	      				<ul>
+	      					<li>5 separate compartments</li>
+	      					<li>Front and back dormers with perch</li>
+	      					<li>Front door/windows</li>
+	      				</ul>
+	  				</h2>
+			    </div>
+			</div>
+		</div>
+		<hr>
+		<div class="container project">
+		  	<div class="row">
+		  		<h1 class="text-ctr">Other Design</h1>
+		  		<div class="col-sm-6">
+	  				<h2>This mailbox was built in 2008 and the design was loosely modeled after designer's home residence.<br><br>Features:
+	      				<ul>
+	      					<li>Fish-scaled roof</li>
+	      					<li>Vertically hinged front door</li>
+	      					<li>Panel siding</li>
+	      					<li>Handcrafted heart icons at the base</li>
+	      				</ul>
+	  				</h2>
+			    </div>
+		    	<div class="col-sm-6">
+			    	<div class="slides-div">
+				    	<carousel interval="myInterval" no-pause=true>
+					      	<slide ng-repeat="slide in brick" active="slide.active" no-pause=true>
+					        	<img ng-src="{{slide.image}}">
+					        	<div class="carousel-caption">
+					          		<h2>{{slide.text}}</h2>
+					        	</div>
+					      	</slide>
+				    	</carousel>
+				  	</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div ng-show="addComment" class="text-ctr">
+			<h3>Like these birdhouse designs? Leave a comment below.</h3>
+			<button type="button" class="btn btn-default red" ng-click="leaveComment()">Leave Comment</button>
+		</div>
+		<div ng-show="showFields">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+					</div>
+					<div class="col-sm-6">
+						<div class="submit-comment">
+							<form name="newComment" novalidate>
+								<div id="errorBox">
+									<div id="regularError" class="alert alert-danger" ng-show="errorMessage">{{errorMessage}}</div>
+								</div>
+								<h4>Name:</h4>
+								<input class="form-control" type="text" required ng-model="newComment.name" autofocus />
+								<h4>Comment:</h4>
+								<input class="form-control" type="text" required ng-model="newComment.description" />
+								<div class="comment-btns">
+							    	<button class="btn-primary btn text-ctr red float-rt" ng-click="sendComment()">Submit</button>
+								    <button class="btn-primary btn text-ctr red float-rt" ng-click="cancelComment()">Cancel</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="col-sm-3">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div ng-show="addedComment" class="addedComment">
+			<p class="text-ctr red">Thank you for your comment.</p>
+		</div>
+		<div>
+			<div ng-repeat="comment in comments">
+				<div class="comment">
+					<span> Posted by: <span class="comment-name">{{comment.name}}</span></span>
+					<span class="comment-date">{{comment.date | date: 'MM/dd/yyyy hh:mm'}}</span><br>
+					{{comment.description}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

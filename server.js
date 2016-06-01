@@ -29,8 +29,11 @@ var commentsController = require('./server/controllers/comments-controller');
 // POST COMMENTS
 // Authentication
 // Creating a post request equal to the post route created in the signup-controller (api/user/signup), and then calling the signup function inside the commentsController
-app.post('/api/mailboxes/post', commentsController.postComment);
-app.get('/api/mailboxes/get', commentsController.getComments);
+app.post('/api/mailboxes/post', commentsController.postMailboxComment);
+app.get('/api/mailboxes/get', commentsController.getMailboxComments);
+app.post('/api/birdhouses/post', commentsController.postBirdhouseComment);
+// (from the birdhouse-controller) defining the get route to grab all the birdhouse comments from the db, and calling getBirdhouseComments function in the comments-controller
+app.get('/api/birdhouses/get', commentsController.getBirdhouseComments);
 
 app.listen('3000', function(){
 	console.log("I'm listening for Larry!");

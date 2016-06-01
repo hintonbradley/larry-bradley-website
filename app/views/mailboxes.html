@@ -1,8 +1,8 @@
-<div id="mailboxes" ng-controller="MailboxesController">
-	<div class="grey">
-		<div class="container">
+<div id="mailboxes" class="project-page" ng-controller="MailboxesController">
+	<div class="gray full-container">
+		<h1 class="text-ctr title-padding">Panel Design Mailbox</h1>
+		<div class="container project">
 		  	<div class="row">
-		  		<h1 class="text-ctr">Panel Design Mailbox</h1>
 		    	<div class="col-sm-6">
 			    	<div class="slides-div">
 				    	<carousel interval="myInterval" no-pause=true>
@@ -16,39 +16,30 @@
 				  	</div>
 				</div>
 				<div class="col-sm-6">
-			    	<div class="container2 theme-showcase" role="main">
-						<div class="jumbotron2 no-padding">
-							<h1></h1>
-			  				<h2>This mailbox was built in 2008 and the design was loosely modeled after designer's home residence.<br><br>Features:
-			      				<ul>
-			      					<li>Fish-scaled roof</li>
-			      					<li>Vertically hinged front door</li>
-			      					<li>Panel siding</li>
-			      					<li>Handcrafted heart icons at the base</li>
-			      				</ul>
-			  				</h2>
-				  		</div>
-			      	</div>
+	  				<h2>This mailbox was built in 2008 and the design was loosely modeled after designer's home residence.<br><br>Features:
+	      				<ul>
+	      					<li>Fish-scaled roof</li>
+	      					<li>Vertically hinged front door</li>
+	      					<li>Panel siding</li>
+	      					<li>Handcrafted heart icons at the base</li>
+	      				</ul>
+	  				</h2>
 			    </div>
 			</div>
 		</div>
 		<hr>
-		<div class="container">
+		<div class="container project">
 		  	<div class="row">
 		  		<h1 class="text-ctr">Brick Design Mailbox</h1>
 		  		<div class="col-sm-6">
-			    	<div class="container2 theme-showcase" role="main">
-						<div class="jumbotron2 no-padding">
-			  				<h2>This mailbox was built in 2008 and the design was loosely modeled after designer's home residence.<br><br>Features:
-			      				<ul>
-			      					<li>Fish-scaled roof</li>
-			      					<li>Vertically hinged front door</li>
-			      					<li>Panel siding</li>
-			      					<li>Handcrafted heart icons at the base</li>
-			      				</ul>
-			  				</h2>
-				  		</div>
-			      	</div>
+	  				<h2>This mailbox was built in 2008 and the design was loosely modeled after designer's home residence.<br><br>Features:
+	      				<ul>
+	      					<li>Fish-scaled roof</li>
+	      					<li>Vertically hinged front door</li>
+	      					<li>Panel siding</li>
+	      					<li>Handcrafted heart icons at the base</li>
+	      				</ul>
+	  				</h2>
 			    </div>
 		    	<div class="col-sm-6">
 			    	<div class="slides-div">
@@ -64,21 +55,47 @@
 				</div>
 			</div>
 		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<strong>Name</strong>
-					<input type="text" ng-model="newComment.name" class="form-control"></input>
-					<strong>Description</strong>
-					<input type="text" ng-model="newComment.description" class="form-control"></input>
-					<button ng-click="sendComment()">Submit</button>
-					<table class="allComments">
-						<tr ng-repeat="comment in comments">
-							<td>{{comment.name}}</td>
-							<td>{{comment.description}}</td>
-							<td>{{comment.date | date: 'MM/dd/yyyy hh:mm'}}</td>
-						</tr>
-					</table>
+		<hr>
+		<div ng-show="addComment" class="text-ctr">
+			<h3>Like these mailbox designs? Leave a comment below.</h3>
+			<button type="button" class="btn btn-default red" ng-click="leaveComment()">Leave Comment</button>
+		</div>
+		<div ng-show="showFields">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+					</div>
+					<div class="col-sm-6">
+						<div class="submit-comment">
+							<form name="newComment" novalidate>
+								<div id="errorBox">
+									<div id="regularError" class="alert alert-danger" ng-show="errorMessage">{{errorMessage}}</div>
+								</div>
+								<h4>Name:</h4>
+								<input class="form-control" type="text" required ng-model="newComment.name" autofocus />
+								<h4>Comment:</h4>
+								<input class="form-control" type="text" required ng-model="newComment.description" />
+								<div class="comment-btns">
+							    	<button class="btn-primary btn text-ctr red float-rt" ng-click="sendComment()">Submit</button>
+								    <button class="btn-primary btn text-ctr red float-rt" ng-click="cancelComment()">Cancel</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="col-sm-3">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div ng-show="addedComment" class="addedComment">
+			<p class="text-ctr red">Thank you for your comment.</p>
+		</div>
+		<div>
+			<div ng-repeat="comment in comments">
+				<div class="comment">
+					<span> Posted by: <span class="comment-name">{{comment.name}}</span>and {{comment.project}}</span>
+					<span class="comment-date">{{comment.date | date: 'MM/dd/yyyy hh:mm'}}</span><br>
+					{{comment.description}}
 				</div>
 			</div>
 		</div>

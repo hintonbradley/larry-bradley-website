@@ -13,22 +13,16 @@ body {
 }
 
 body:after {
-  content: url(../images/garage.jpg) url(../images/mbx1.jpg) url(../images/mbx2.1.jpg) url(../images/mbx2.jpg) url(../images/mbx3.jpg);
+  content: url(../images/garage/garage.jpg) url(../images/mailboxes/mbx1.jpg) url(../images/mailboxes/mbx2.1.jpg) url(../images/mailboxes/mbx2.jpg) url(../images/mailboxes/mbx3.jpg);
   display: none;
 }
-h1 {
-  height: 40px;
-  font-size: 74px;
-  font-weight: normal;
-  left: 0;
-  z-index: 1;
-  text-shadow: 0 2px 0 black, 0 0 10px black;
-}
+
 .parallax {
   position:absolute;
   left: 0;
   top: 0;
 }
+
 .photo {
   background-attachment: fixed;
   background-position: 50% 0;
@@ -38,24 +32,6 @@ h1 {
   /*adding to have image span full width*/
   background-size: cover;
 }
-
-/*.non-photo {*/
-/*	padding: 50px 10px;*/
-/*  background-attachment: fixed;
-  background-position: 50% 0;
-  background-repeat: no-repeat;*/
-/*  height: 600px;
-  position: relative;*/
-  /*adding to have image span full width*/
-  /*background-size: cover;*/
-/*  background-color: #333333;
-  color: #B0C1CB;*/
-/*#0D293F*/
-/*#0B233B*/
-
-/*#BFCDD8 */
-}
-
 
 .photo span {
 	/*removing to move text to middle of div*/
@@ -71,19 +47,19 @@ h1 {
   /*width: 1280px;*/
 }
 .mbx3 {
-  background-image: url(../images/mbx3.jpg);
+  background-image: url(../images/mailboxes/mbx3.jpg);
 }
 /*.cats {
   background-image: url(../images/cats.jpg);
 }*/
 .garage {
-  background-image: url(../images/garage.jpg);
+  background-image: url(../images/garage/garage.jpg);
 }
-.mailbox1 {
-  background-image: url(../images/mbx1.jpg);
+.main-photo1 {
+  background-image: url(../images/garage/garage.jpg);
 }
-.mailbox2 {
-  background-image: url(../images/mbx2.2.jpg);
+.main-photo2 {
+  background-image: url(../images/mailboxes/mbx2.2.jpg);
 }
 
 
@@ -123,13 +99,17 @@ z-index: 10000;
 }
 
 .navbar-right .btn-group {
-  padding-right: 15px;
+  padding-right: 30px;
 }
 
 .navbar {
   background-color: #933B4B;
   margin-bottom: 0px;
   border: none;
+}
+
+.navbar-brand {
+  padding-left: 30px;
 }
 
 .navbar-default, .navbar-brand {
@@ -144,3 +124,115 @@ z-index: 10000;
 .container {
   width: 100% !important;
 }
+
+.full-container {
+  margin-top: 50px;
+}
+
+.red {
+  background-color: #933B4B;
+}
+
+.btn-default {
+  color: #B0C1CB;
+}
+
+.btn:hover {
+  background-color: #933B4B !important;
+  color: #B0C1CB;
+}
+
+.btn-default:focus {
+  background-color: #933B4B;
+  color: #B0C1CB;
+}
+
+
+/*COMMENTS*/
+.project-page .comment {
+  background-color: #933B4B;
+  color: #B0C1CB;
+  width: 500px;
+  height:100px;
+/*  border: solid #B0C1CB; 5px;*/
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  overflow: auto;
+}
+
+.project-page .comment-date {
+  float: right;
+  color: blue;
+}
+
+.project-page .comment-name {
+  color: yellow;
+}
+
+.project-page .submit-comment {
+  margin: 0 auto;
+}
+
+.project-page .submit-comment input,.project-page .submit-comment textarea {
+  width: 100%;
+}
+
+.project-page .float-rt {
+  float: right;
+}
+
+.project-page .submit-comment h4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.project-page .comment-btns button {
+  margin-left: 5px;
+  margin-right: 5px;
+
+}
+
+.project-page .comment-btns {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.project-page .comment-btns .float-rt {
+  float: right;
+}
+
+.project-page hr {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.project-page .project {
+  padding-bottom: 50px;
+}
+
+.project-page .title-padding {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 0px;
+}
+
+.project-page .project ul {
+  margin-left: 1.5em;
+}
+
+.project-page .addedComment {
+  margin: auto;
+  padding-bottom: 10px;
+  width: 25%;
+  border-radius: 5px;
+}
+
+.project-page .addedComment p {
+  font-size: 24px;
+}
+
+
+

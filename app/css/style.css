@@ -182,10 +182,10 @@ z-index: 10000;
   float: right;
 }
 
-.project-page .submit-comment h4 {
+/*.project-page .submit-comment h4 {
   margin-top: 5px;
   margin-bottom: 5px;
-}
+}*/
 
 .project-page .comment-btns button {
   margin-left: 5px;
@@ -203,14 +203,14 @@ z-index: 10000;
 }
 
 .project-page hr {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 45px;
 }
 
 .project-page .project {
-  padding-bottom: 50px;
+  height: 100%;
 }
 
 .project-page .title-padding {
@@ -221,6 +221,18 @@ z-index: 10000;
 
 .project-page .project ul {
   margin-left: 1.5em;
+}
+
+.project-page .project-row {
+  height: 100%;
+}
+
+.project-page .lf-proj-div {
+  height: 425px;
+}
+
+.project-page .rt-proj-div {
+  height: 425px;
 }
 
 .project-page .addedComment {
@@ -234,5 +246,39 @@ z-index: 10000;
   font-size: 24px;
 }
 
+.project-page .leaveComment {
+  margin-bottom: 25px;
+  font-size: 24px;
+}
 
+/*Carousel*/
+.slides-div {
+  margin-top: 10px;
+}
 
+img {
+  max-height: 395px;
+  width: 100%;
+}
+
+.project-page div.lf-proj-div.carousel-container {
+  margin: auto;
+}
+
+.project-page div.lf-proj-div.text-container {
+  padding-left: 30px;
+}
+
+/*Project pages*/
+.project-page .title-header {
+  font-size: 48px;
+}
+
+.project-page .text-container {
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+.project-page .submit-comment input {
+  margin-bottom: 10px;
+}

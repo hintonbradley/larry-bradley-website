@@ -14,18 +14,7 @@
   height: 100%;
 }
 
-#main-page img {
-  height: 100%;
-  max-height: 400px;
-  margin: 0 auto;
-  width: 80%;
-}
-
 /*carousel*/
-#main-page .carousel-control.left, .carousel-control.right {
-  background-image: none !important;
-}
-
 #main-page {
   margin-top: 50px;
 }

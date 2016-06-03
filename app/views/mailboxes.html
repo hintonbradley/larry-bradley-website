@@ -1,53 +1,52 @@
 <div id="mailboxes" class="project-page" ng-controller="MailboxesController">
 	<div class="gray full-container">
-		<h1 class="text-ctr title-padding">Panel Design Mailbox</h1>
 		<div class="container project">
-		  	<div class="row">
-		    	<div class="col-sm-6">
+		  	<div class="row project-row">
+		  		<p class="text-ctr title-padding title-header">Panel Design Mailbox</p>
+		    	<div class="col-sm-7 col-xs-12 lf-proj-div carousel-container">
 			    	<div class="slides-div">
 				    	<carousel interval="myInterval" no-pause=true>
 					      	<slide ng-repeat="slide in siding" active="slide.active" no-pause=true>
 					        	<img ng-src="{{slide.image}}">
 					        	<div class="carousel-caption">
-					          		<h2>{{slide.text}}</h2>
+					          		<p>{{slide.text}}</p>
 					        	</div>
 					      	</slide>
 				    	</carousel>
 				  	</div>
 				</div>
-				<div class="col-sm-6">
-	  				<h2>This mailbox was built in 2008 and the design was loosely modeled after designer's home residence.<br><br>Features:
+				<div class="col-sm-5 col-xs-12 rt-proj-div text-container">
+	  				<p>This mailbox was built in 2008 and the design was loosely modeled after Larry's home residence.<br><br>Features:
 	      				<ul>
-	      					<li>Fish-scaled roof</li>
+	      					<li>Cottage lap siding</li>
+	      					<li>Fish-scale style roof</li>
 	      					<li>Vertically hinged front door</li>
-	      					<li>Panel siding</li>
-	      					<li>Handcrafted heart icons at the base</li>
+	      					<li>Handcrafted heart icons</li>
 	      				</ul>
-	  				</h2>
+	  				</p>
 			    </div>
 			</div>
 		</div>
 		<hr>
 		<div class="container project">
-		  	<div class="row">
-		  		<h1 class="text-ctr">Brick Design Mailbox</h1>
-		  		<div class="col-sm-6">
-	  				<h2>This mailbox was built in 2008 and the design was loosely modeled after designer's home residence.<br><br>Features:
+		  	<div class="row project-row">
+		  		<p class="text-ctr title-padding title-header">Brick Design Mailbox</p>
+		  		<div class="col-sm-5 col-xs-12 lf-proj-div text-container">
+	  				<p>This mailbox was built in 2008 for a neighbor.<br><br>Features:
 	      				<ul>
-	      					<li>Fish-scaled roof</li>
+	      					<li>Batten seam roof</li>
+	      					<li>Brick painted siding</li>
 	      					<li>Vertically hinged front door</li>
-	      					<li>Panel siding</li>
-	      					<li>Handcrafted heart icons at the base</li>
 	      				</ul>
-	  				</h2>
+	  				</p>
 			    </div>
-		    	<div class="col-sm-6">
+		    	<div class="col-sm-7 col-xs-12 rt-proj-div carousel-container">
 			    	<div class="slides-div">
 				    	<carousel interval="myInterval" no-pause=true>
 					      	<slide ng-repeat="slide in brick" active="slide.active" no-pause=true>
 					        	<img ng-src="{{slide.image}}">
 					        	<div class="carousel-caption">
-					          		<h2>{{slide.text}}</h2>
+					          		<p>{{slide.text}}</p>
 					        	</div>
 					      	</slide>
 				    	</carousel>
@@ -56,8 +55,8 @@
 			</div>
 		</div>
 		<hr>
-		<div ng-show="addComment" class="text-ctr">
-			<h3>Like these mailbox designs? Leave a comment below.</h3>
+		<div ng-show="addComment" class="text-ctr leaveComment">
+			<p>Like these mailbox designs? Leave a comment below.</p>
 			<button type="button" class="btn btn-default red" ng-click="leaveComment()">Leave Comment</button>
 		</div>
 		<div ng-show="showFields">
@@ -71,9 +70,9 @@
 								<div id="errorBox">
 									<div id="regularError" class="alert alert-danger" ng-show="errorMessage">{{errorMessage}}</div>
 								</div>
-								<h4>Name:</h4>
+								<label>Name:</label>
 								<input class="form-control" type="text" required ng-model="newComment.name" autofocus />
-								<h4>Comment:</h4>
+								<label>Comment:</label>
 								<input class="form-control" type="text" required ng-model="newComment.description" />
 								<div class="comment-btns">
 							    	<button class="btn-primary btn text-ctr red float-rt" ng-click="sendComment()">Submit</button>
@@ -93,7 +92,7 @@
 		<div>
 			<div ng-repeat="comment in comments">
 				<div class="comment">
-					<span> Posted by: <span class="comment-name">{{comment.name}}</span>and {{comment.project}}</span>
+					<span> Posted by: <span class="comment-name">{{comment.name}}</span></span>
 					<span class="comment-date">{{comment.date | date: 'MM/dd/yyyy hh:mm'}}</span><br>
 					{{comment.description}}
 				</div>

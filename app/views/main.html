@@ -37,13 +37,71 @@
   </div>
   <div parallax-background class="non-photo" parallax-ratio="0.5">
     <div class="name inline-block projects">
-      <p> Projects </p>
-      <ul>
-        <li>Mailboxes</li>
-        <li>Birdhouses</li>
-        <li>Miniature Houses</li>
-        <li>Garage</li>
-      </ul>
+      <p>Projects</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 flip-proj">
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <a ui-sref="mailboxes">
+                <div class="flipper">
+                  <div class="front text-ctr">
+                    <p>Mailboxes</p>
+                  </div>
+                  <div class="back text-ctr">
+                    This is the mailboxes information.
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 flip-proj">
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <a ui-sref="birdhouses">
+                <div class="flipper">
+                  <div class="front">
+                    <p>Birdhouses</p>
+                  </div>
+                  <div class="back">
+                    This is the birdhouses information.
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 flip-proj">
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <a ui-sref="minihouses">
+                <div class="flipper">
+                  <div class="front">
+                    <p>Miniature Houses</p>
+                  </div>
+                  <div class="back">
+                    This is the mini houses information.
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 flip-proj">
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <a ui-sref="cathouses">
+                <div class="flipper">
+                  <div class="front">
+                    <p>Cat Houses</p>
+                  </div>
+                  <div class="back">
+                    This is the cat house information.
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div parallax-background class="photo main-photo2" parallax-ratio="0.7">

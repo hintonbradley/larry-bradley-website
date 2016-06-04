@@ -1,12 +1,12 @@
-<div id="birdhouses" class="project-page" ng-controller="BirdhousesController">
+<div id="minihouses" class="project-page" ng-controller="MinihousesController">
 	<div class="gray full-container">
 		<div class="container project">
 		  	<div class="row project-row">
-		  		<p class="text-ctr title-padding title-header">5-Chamber Design</p>
+		  		<p class="text-ctr title-padding title-header">Gnome Home</p>
 		    	<div class="col-sm-7 col-xs-12 lf-proj-div carousel-container">
 			    	<div class="slides-div">
 				    	<carousel interval="myInterval" no-pause=true>
-					      	<slide ng-repeat="slide in siding" active="slide.active" no-pause=true>
+					      	<slide ng-repeat="slide in gnomehome" active="slide.active" no-pause=true>
 					        	<img ng-src="{{slide.image}}">
 					        	<div class="carousel-caption">
 					          		<p>{{slide.text}}</p>
@@ -16,11 +16,12 @@
 				  	</div>
 				</div>
 				<div class="col-sm-5 col-xs-12 rt-proj-div text-container">
-	  				<p>This birdhouse was built in 2015 and designed from a photograph of the client's childhood home.<br><br>Features:
+	  				<p>This mailbox was built in 2008 and the design was loosely modeled after Larry's home residence.<br><br>Features:
 	      				<ul>
-	      					<li>5 separate compartments</li>
-	      					<li>Front and back dormers with perch</li>
-	      					<li>Front door/windows</li>
+	      					<li>Cottage lap siding</li>
+	      					<li>Fish-scale style roof</li>
+	      					<li>Vertically hinged front door</li>
+	      					<li>Handcrafted heart icons</li>
 	      				</ul>
 	  				</p>
 			    </div>
@@ -29,14 +30,13 @@
 		<hr>
 		<div class="container project">
 		  	<div class="row project-row">
-		  		<p class="text-ctr title-padding title-header">Other Design</p>
+		  		<p class="text-ctr title-padding title-header">Brick Design Mailbox</p>
 		  		<div class="col-sm-5 col-xs-12 lf-proj-div text-container">
-	  				<p>This mailbox was built in 2008 and the design was loosely modeled after designer's home residence.<br><br>Features:
+	  				<p>This mailbox was built in 2008 for a neighbor.<br><br>Features:
 	      				<ul>
-	      					<li>Fish-scaled roof</li>
+	      					<li>Batten seam roof</li>
+	      					<li>Brick painted siding</li>
 	      					<li>Vertically hinged front door</li>
-	      					<li>Panel siding</li>
-	      					<li>Handcrafted heart icons at the base</li>
 	      				</ul>
 	  				</p>
 			    </div>
@@ -56,7 +56,7 @@
 		</div>
 		<hr>
 		<div ng-show="addComment" class="text-ctr leaveComment">
-			<p>Like these birdhouse designs? Leave a comment below.</p>
+			<p>Like these mailbox designs? Leave a comment below.</p>
 			<button type="button" class="btn btn-default red" ng-click="leaveComment()">Leave Comment</button>
 		</div>
 		<div ng-show="showFields">
@@ -92,7 +92,7 @@
 		<div>
 			<div ng-repeat="comment in comments">
 				<div class="comment">
-					<span> Posted by: <span class="comment-name">{{comment.name}}</span></span>
+					<span> Posted by: <span class="comment-name">{{comment.name}}</span>and {{comment.project}}</span>
 					<span class="comment-date">{{comment.date | date: 'MM/dd/yyyy hh:mm'}}</span><br>
 					{{comment.description}}
 				</div>
@@ -100,3 +100,4 @@
 		</div>
 	</div>
 </div>
+			

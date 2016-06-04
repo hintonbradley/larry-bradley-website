@@ -125,10 +125,6 @@ z-index: 10000;
   width: 100% !important;
 }
 
-.full-container {
-  margin-top: 50px;
-}
-
 .red {
   background-color: #933B4B;
 }
@@ -214,10 +210,9 @@ z-index: 10000;
 }
 
 .project-page .title-padding {
-  padding-top: 25px;
+  /*padding-top: 25px;*/
   padding-bottom: 25px;
   margin-bottom: 0px;
-  margin-top: 25px;
 }
 
 .project-page .project ul {
@@ -282,4 +277,12 @@ img {
 
 .project-page .submit-comment input {
   margin-bottom: 10px;
+}
+
+
+
+
+
+.project-page {
+  padding-top: 70px;
 }

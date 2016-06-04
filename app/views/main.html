@@ -12,12 +12,8 @@
       <div class="container gray">
         <div class="row">
           <div class="col-sm-6">
-            <!-- <div class="container2 theme-showcase" role="main">
-            <div class="jumbotron2"> -->
             <div class="small-lbphoto">
             </div>
-              <!-- </div>
-              </div> -->
           </div>
           <div class="col-sm-6 lb-about">
             <h3>Based in California's Napa Valley and specializing in one of a kind woodworking projects, Larry Bradley has been creating designs and making them come to fruition through his craftmanship talents for over 40 years.<br><br>
@@ -25,7 +21,7 @@
               <ul>
                 <li><a href="http://www.charleskrug.com">Charles Krug Winery</a></li>
                 <li><a href="http://www.oliveoilsainthelena.com/">Napa Valley Olive Oil Manufacturing Co.</a></li>
-                <li><a href="http://www.w3schools.com">Visit W3Schools</a>Sunrise Preschool</li>
+                <li><a href="https://www.facebook.com/sthelenajuniorwomen">St. Helena Junior Women's Club</a></li>
               </ul>
             </h3>
           </div>
@@ -44,7 +40,8 @@
             <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
               <a ui-sref="mailboxes">
                 <div class="flipper">
-                  <div class="front text-ctr">
+                  <div class="front">
+                    <div class="front-mailbox front-project"></div>
                     <p>Mailboxes</p>
                   </div>
                   <div class="back text-ctr">
@@ -59,9 +56,10 @@
               <a ui-sref="birdhouses">
                 <div class="flipper">
                   <div class="front">
+                    <div class="front-birdhouse front-project"></div>
                     <p>Birdhouses</p>
                   </div>
-                  <div class="back">
+                  <div class="back text-ctr">
                     This is the birdhouses information.
                   </div>
                 </div>
@@ -76,11 +74,12 @@
             <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
               <a ui-sref="minihouses">
                 <div class="flipper">
-                  <div class="front">
+                  <div id="mailbox-proj-title" class="front">
+                    <div class="front-minihouses front-project"></div>
                     <p>Miniature Houses</p>
                   </div>
-                  <div class="back">
-                    This is the mini houses information.
+                  <div class="back text-ctr">
+                    This is the mini-houses information.
                   </div>
                 </div>
               </a>
@@ -91,10 +90,11 @@
               <a ui-sref="cathouses">
                 <div class="flipper">
                   <div class="front">
+                    <div class="front-cathouses front-project"></div>
                     <p>Cat Houses</p>
                   </div>
-                  <div class="back">
-                    This is the cat house information.
+                  <div class="back text-ctr">
+                    This is the cat houses information.
                   </div>
                 </div>
               </a>
@@ -106,10 +106,12 @@
   </div>
   <div parallax-background class="photo main-photo2" parallax-ratio="0.7">
   </div>
-  <div class="contact">
-    <div class="email">
-      Do you have a project you'd like designed or built? Perhaps you just have questions about an idea. Either way, feel free to contact us by clicking the email below.
-      <div class="address">
+  <div parallax-background class="non-photo" parallax-ratio="0.5">
+    <div class="contact">
+      <div class="email">
+        <p>Do you have a project you'd like designed or built? <br>
+        Perhaps you have questions about an idea.<br>
+        Either way, to inquire please contact us by clicking <a href="mailto:shbocceman@sbcglobal.net">here</a>.</p>
       </div>
     </div>
   </div>

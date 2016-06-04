@@ -14,15 +14,6 @@
   height: 100%;
 }
 
-/*carousel*/
-#main-page {
-  margin-top: 50px;
-}
-
-#testing-navbar {
-  margin-top: 200px;
-}
-
 /*other*/
 
 .non-photo {
@@ -46,9 +37,9 @@
   height: 400px;
   width: 400px;
   border-radius: 200px;
-  background-image: url(../images/xmas.jpg);
+  background-image: url(../images/krug.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: top right;
   margin: 0 auto;
   margin-top: 3em;
 }
@@ -116,9 +107,9 @@
   width: 49%;
 }
 
-
-
-
+#main-page {
+  padding-top: 40px;
+}
 
 /*flipp*/
 
@@ -132,23 +123,19 @@
   }
 
 .flip-container, .front, .back {
-  width: 350px;
-  height: 200px;
+  width: 400px;
+  height: 250px;
   margin: auto;
   display: block;
   text-align: center;
-}
-
-.front p {
-  margin-top: 40px;
 }
 
 /* flip speed goes here */
 .flipper {
   transition: 0.6s;
   transform-style: preserve-3d;
-
   position: relative;
+  margin-top: 15px;
 }
 
 /* hide back of pane during swap */
@@ -158,14 +145,15 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: green;
 }
 
 /* front pane, placed above back */
 .front {
-  z-index: 2;
-  /* for firefox 31 */
   transform: rotateY(0deg);
+/*adding for transparency*/
+  position: relative;
+  z-index: 5;
+  color: #000;
 }
 
 /* back, initially hidden pane */
@@ -175,4 +163,43 @@
 
 .flip-proj {
   margin-bottom: 20px;
+}
+
+.front-mailbox {
+  background-image: url(../images/mailboxes/mbx1.jpg);
+}
+
+.front-birdhouse {
+  background-image: url(../images/birdhouses/1front.jpg);
+}
+
+.front-minihouses {
+  background-image: url(../images/mini-homes/ghome-front.jpg);
+}
+
+.front-project {
+  background-size: cover;
+  width: 400px;
+  height: 250px;
+
+/*adding for transparency*/
+  position: absolute;
+  z-index: -1;
+  opacity: .4;
+}
+
+.front p {
+  padding-top: 70px;
+}
+
+#mailbox-proj-title p {
+  padding-top: 20px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.email p {
+  font-size: 48px;
 }

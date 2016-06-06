@@ -37,6 +37,12 @@ app.get('/api/birdhouses/get', commentsController.getBirdhouseComments);
 app.post('/api/minihouses/post', commentsController.postMinihouseComment);
 app.get('/api/minihouses/get', commentsController.getMinihouseComments);
 
-app.listen('3000', function(){
-	console.log("I'm listening for Larry!");
-});
+// original:
+// app.listen('3000', function(){
+// 	console.log("I'm listening for Larry!");
+// });
+
+// for heroku:
+app.listen(process.env.PORT || 3000), function () {
+  console.log("SERVER RUNNING");
+};

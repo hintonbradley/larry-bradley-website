@@ -56,3 +56,34 @@ module.exports.getBirdhouseComments = function (req, res) {
 			}
 		})
 }
+
+module.exports.postMinihouseComment = function (req, res) {
+	var comment = new Comment(req.body);
+	comment.save();
+
+	Comment.find({"project":3})
+		.sort({date: -1}).exec(function(err, allComments){
+		if (err) {
+			res.error(error);
+		} else {
+			res.json(allComments);
+		}
+	});
+}
+
+// creating the function that will grab all the minihouses comments from the database
+module.exports.getMinihouseComments = function (req, res) {
+	// grabbing all comments that have a project value of 2 (comments made on birdhouses page)
+	Comment.find({"project":3})
+	// sorting by date, descending
+		.sort({date: -1})
+		.exec(function(err, allComments) {
+			if (err) {
+				console.log ("there is a minihouse err: ", err)
+				res.error(err)
+			} else {
+				console.log("all comments from the comments controller are: ", allComments);
+				res.json(allComments);
+			}
+		})
+}

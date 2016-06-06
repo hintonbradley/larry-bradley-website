@@ -55,13 +55,6 @@ body:after {
 .garage {
   background-image: url(../images/garage/garage.jpg);
 }
-.main-photo1 {
-  background-image: url(../images/garage/garage.jpg);
-}
-.main-photo2 {
-  background-image: url(../images/mailboxes/mbx2.2.jpg);
-}
-
 
 /*navbar dropdown*/
 
@@ -279,10 +272,45 @@ img {
   margin-bottom: 10px;
 }
 
-
-
-
-
 .project-page {
   padding-top: 70px;
 }
+
+
+/*navbar*/
+.navbar-left {
+  float: left;
+}
+
+.navbar-right {
+  float: right;
+  height: 50px;
+}
+
+.navbar-right button {
+  height: 50px;
+  margin: auto;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
+  background-color: #933B4B;
+  color: #B0C1CB;
+}
+
+.open>.dropdown-menu {
+  margin-right: 35px;
+  margin-top: -1px;
+  font-size: 20px;
+  line-height: 20px;
+  background-color: #B0C1CB;
+}
+
+.dropdown-menu li a {
+  color: #933B4B;
+}
+
+
+
+

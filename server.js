@@ -34,6 +34,8 @@ app.get('/api/mailboxes/get', commentsController.getMailboxComments);
 app.post('/api/birdhouses/post', commentsController.postBirdhouseComment);
 // (from the birdhouse-controller) defining the get route to grab all the birdhouse comments from the db, and calling getBirdhouseComments function in the comments-controller
 app.get('/api/birdhouses/get', commentsController.getBirdhouseComments);
+app.post('/api/minihouses/post', commentsController.postMinihouseComment);
+app.get('/api/minihouses/get', commentsController.getMinihouseComments);
 
 app.listen('3000', function(){
 	console.log("I'm listening for Larry!");

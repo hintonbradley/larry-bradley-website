@@ -8,7 +8,7 @@ angular.module('LarryBradley', ['ui.router','angular-parallax','ui.bootstrap','n
 		.state('mailboxes', {
 			url: '/mailboxes',
 			templateUrl: 'app/views/mailboxes.html',
-			controller: 'MailboxesController'
+			controller: 'ProjectController'
 		})
 	    .state('main', {
             url: "/",
@@ -18,17 +18,12 @@ angular.module('LarryBradley', ['ui.router','angular-parallax','ui.bootstrap','n
         .state('birdhouses', {
             url: "/birdhouses",
             templateUrl: "app/views/birdhouses.html",
-            controller: "BirdhousesController"
-        })
-        .state('slideshow', {
-            url: "/slideshow",
-            templateUrl: "app/views/slideshow.html",
-            controller: "SlideshowController"
+            controller: "ProjectController"
         })
         .state('minihouses', {
             url: "/miniaturehouses",
             templateUrl: "app/views/mini-houses.html",
-            controller: "MinihousesController"
+            controller: "ProjectController"
         })
 	})
 }());

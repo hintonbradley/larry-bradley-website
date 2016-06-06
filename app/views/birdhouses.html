@@ -1,12 +1,13 @@
-<div id="birdhouses" class="project-page" ng-controller="BirdhousesController">
+<div id="birdhouses" class="project-page" ng-controller="ProjectController">
 	<div class="gray full-container">
 		<div class="container project">
 		  	<div class="row project-row">
+		  		{{thisState}}
 		  		<p class="text-ctr title-padding title-header">5-Chamber Design</p>
 		    	<div class="col-sm-7 col-xs-12 lf-proj-div carousel-container">
 			    	<div class="slides-div">
 				    	<carousel interval="myInterval" no-pause=true>
-					      	<slide ng-repeat="slide in siding" active="slide.active" no-pause=true>
+					      	<slide ng-repeat="slide in fiveChamber" active="slide.active" no-pause=true>
 					        	<img ng-src="{{slide.image}}">
 					        	<div class="carousel-caption">
 					          		<p>{{slide.text}}</p>
@@ -31,19 +32,18 @@
 		  	<div class="row project-row">
 		  		<p class="text-ctr title-padding title-header">Other Design</p>
 		  		<div class="col-sm-5 col-xs-12 lf-proj-div text-container">
-	  				<p>This mailbox was built in 2008 and the design was loosely modeled after designer's home residence.<br><br>Features:
+	  				<p>This one of a kind cylindrical design was built with numerous divisions circling the full length of the structure providing plenty of space in one house.<br><br>Features:
 	      				<ul>
-	      					<li>Fish-scaled roof</li>
-	      					<li>Vertically hinged front door</li>
-	      					<li>Panel siding</li>
-	      					<li>Handcrafted heart icons at the base</li>
+	      					<li>Cylindrical body</li>
+	      					<li>Shingled rooftop</li>
+	      					<li>12 separate compartments with perch</li>
 	      				</ul>
 	  				</p>
 			    </div>
 		    	<div class="col-sm-7 col-xs-12 rt-proj-div carousel-container">
 			    	<div class="slides-div">
 				    	<carousel interval="myInterval" no-pause=true>
-					      	<slide ng-repeat="slide in brick" active="slide.active" no-pause=true>
+					      	<slide ng-repeat="slide in cylindrical" active="slide.active" no-pause=true>
 					        	<img ng-src="{{slide.image}}">
 					        	<div class="carousel-caption">
 					          		<p>{{slide.text}}</p>
@@ -75,7 +75,7 @@
 								<label>Comment:</label>
 								<textarea class="form-control" rows="4" required ng-model="newComment.description"></textarea>
 								<div class="comment-btns">
-							    	<button class="btn-primary btn text-ctr red float-rt" ng-click="sendComment()">Submit</button>
+							    	<button class="btn-primary btn text-ctr red float-rt" ng-click="sendComment(2, 'birdhouses')">Submit</button>
 								    <button class="btn-primary btn text-ctr red float-rt" ng-click="cancelComment()">Cancel</button>
 								</div>
 							</form>

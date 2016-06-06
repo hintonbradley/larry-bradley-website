@@ -1,4 +1,4 @@
-<div id="mailboxes" class="project-page" ng-controller="MailboxesController">
+<div id="mailboxes" class="project-page" ng-controller="ProjectController">
 	<div class="gray full-container">
 		<div class="container project">
 		  	<div class="row project-row">
@@ -75,7 +75,7 @@
 								<label>Comment:</label>
 								<textarea class="form-control" rows="4" required ng-model="newComment.description"></textarea>
 								<div class="comment-btns">
-							    	<button class="btn-primary btn text-ctr red float-rt" ng-click="sendComment()">Submit</button>
+							    	<button class="btn-primary btn text-ctr red float-rt" ng-click="sendComment(1, 'mailboxes')">Submit</button>
 								    <button class="btn-primary btn text-ctr red float-rt" ng-click="cancelComment()">Cancel</button>
 								</div>
 							</form>
@@ -92,7 +92,7 @@
 		<div>
 			<div ng-repeat="comment in comments">
 				<div class="comment">
-					<span> Posted by: <span class="comment-name">{{comment.name}}</span>and {{comment.project}}</span>
+					<span> Posted by: <span class="comment-name">{{comment.name}}</span></span>
 					<span class="comment-date">{{comment.date | date: 'MM/dd/yyyy hh:mm'}}</span><br>
 					{{comment.description}}
 				</div>

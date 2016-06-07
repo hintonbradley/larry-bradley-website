@@ -97,9 +97,9 @@ z-index: 10000;
   padding-left: 30px;
 }
 
-.navbar-default, .navbar-brand {
+/*.navbar-default, .navbar-brand {
   color: #B0C1CB !important;
-}
+}*/
 
 /*parallax*/
 .container {
@@ -155,8 +155,8 @@ z-index: 10000;
   color: #933B4B;
 }
 
-.navbar-right .btn:hover {
+/*.navbar-right .btn:hover {
   background-color: #933B4B !important;
-}
+}*/
 
 

@@ -9,7 +9,7 @@ var app = express();
 // mongoose.connect('mongodb://localhost:27017/larrybradley');
 
 // New code for mLabs:
-var mongodbUri = MONGODB_URI;
+var mongodbUri = process.env.MONGODB_URI;
 mongoose.connect(mongodbUri);
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'there is a connection error with the mLabs db:'));

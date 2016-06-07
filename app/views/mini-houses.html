@@ -57,7 +57,7 @@
 		<hr>
 		<div ng-show="addComment" class="text-ctr leaveComment">
 			<p>Like these mailbox designs? Leave a comment below.</p>
-			<button type="button" class="btn btn-default bkgd-red white" ng-click="leaveComment()">Leave Comment</button>
+			<button type="button" class="btn bkgd-red white" ng-click="leaveComment()">Leave Comment</button>
 		</div>
 		<div ng-show="showFields">
 			<div class="container">
@@ -75,8 +75,8 @@
 								<label>Comment:</label>
 								<textarea class="form-control" rows="4" required ng-model="newComment.description"></textarea>
 								<div class="comment-btns">
-							    	<button class="btn-primary btn text-ctr bkgd-red white float-rt" ng-click="sendComment(3,'minihouses')">Submit</button>
-								    <button class="btn-primary btn text-ctr bkgd-red white float-rt" ng-click="cancelComment()">Cancel</button>
+							    	<button class="btn text-ctr bkgd-red white float-rt" ng-click="sendComment(3,'minihouses')">Submit</button>
+								    <button class="btn text-ctr bkgd-red white float-rt" ng-click="cancelComment()">Cancel</button>
 								</div>
 							</form>
 						</div>

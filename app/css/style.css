@@ -197,6 +197,9 @@ z-index: 10000;
   html {
     max-width: 360px;
   }
+  nav {
+    max-width: 360px;
+  }
   .navbar-brand, #nav-btn {
     font-size: 18px;
   }

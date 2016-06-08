@@ -194,6 +194,10 @@ z-index: 10000;
 }
 
 @media only screen and (max-device-width: 360px) {
+  html, body{
+    width:100%;
+    overflow-x:hidden;
+  }
   html {
     max-width: 360px;
   }
@@ -226,6 +230,7 @@ z-index: 10000;
     padding-right: 0px;
     padding-left: 0px;
 }
+
 
 
 

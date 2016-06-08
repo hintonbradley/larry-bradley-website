@@ -258,9 +258,6 @@
   #main-page .lb-about p {
     font-size: 18px;
   }
-  #main-page .non-photo {
-    height: 850px;
-  }
 }
 
 @media only screen and (max-device-width: 360px) {
@@ -293,9 +290,15 @@
     text-align: left;
   }
   #main-page .lb-about ul {
+    font-size: 20px;
     margin-left: 10%;
     margin-right: 10%;
   }
+  #main-page .lb-about p {
+    font-size: 14px;
+  }
 }
+
+
 
 

@@ -125,9 +125,8 @@
 #main-page .flip-container, .front, .back {
   width: 100%;
   height: 100%;
-  /*margin: auto;
-  display: block;*/
   text-align: center;
+  margin: 0 auto;
 }
 
 /* flip speed goes here */
@@ -137,7 +136,7 @@
 /*  position: relative;*/
   /*margin-top: 15px;*/
   margin: auto;
-  width: 500px;
+  width: 90%;
   height: 240px;
 }
 
@@ -158,6 +157,7 @@
   /*color: #000;*/
   border-radius: 5px;
   border: 5px solid #112347;
+  font-size: 12px;
 }
 
 /* back, initially hidden pane */
@@ -165,6 +165,7 @@
   transform: rotateY(180deg);
   border-radius: 5px;
   border: 5px solid #933B4B;
+  font-size: 12px;
 }
 
 #main-page .flip-proj {
@@ -185,6 +186,8 @@
 
 #main-page .front-project {
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   /*width: 450px;*/
   height: 240px;
 
@@ -193,7 +196,6 @@
   /*z-index: -1;*/
   opacity: .4;
   height: 100%;
-  background-position-y: -20px;
 }
 
 #main-page .back-project {
@@ -207,14 +209,24 @@
   position: absolute;
   z-index: 5;
   width: 100%;
-  padding-top: 70px;
+  padding-top: 75px;
 }
 
 #main-page .back p {
-  font-size: 18px !important;
+  font-size: 14px !important;
   text-shadow: none !important;
   z-index: 5;
-  width: 100%
+  width: 100%;
+  padding: 1em;
+}
+
+#main-page .box-text {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 #main-page #mailbox-proj-title p {

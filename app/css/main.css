@@ -239,3 +239,28 @@
 #main-page #contact-div {
   height: 600px !important;
 }
+
+#main-page .lb-about p {
+  font-size: 24px;
+}
+
+@media only screen and (max-device-width: 480px) {
+  #main-page .small-lbphoto {
+    height: 300px;
+    width: 300px;
+  }
+  #main-page .name p {
+    font-size: 4em;
+  }
+  #main-page .inline-block li {
+    font-size: 1.5em;
+  }
+  #main-page .lb-about p {
+    font-size: 18px;
+  }
+  #main-page .non-photo {
+    height: 850px;
+  }
+}
+
+

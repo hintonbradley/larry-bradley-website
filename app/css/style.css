@@ -187,5 +187,9 @@ z-index: 10000;
   }
   .open>.dropdown-menu {
     font-size: 18px;
+  }
+  html {
+    max-width: 480px;
+  }
 }
 

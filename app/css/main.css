@@ -99,7 +99,7 @@
 
 #main-page .lb-about ul {
   padding-left: 25px;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 #main-page .projects li {
@@ -305,8 +305,29 @@
   #main-page .lb-about p {
     font-size: 14px;
   }
+  #main-page .lb-about ul {
+    padding-left: 2em;
+    font-size: 14px;
+  }
+  #main-page .main-photo1 {
+    background-image: url(../images/test.jpg);
+  }
+  #main-page .flipper {
+    height: 175px;
+  }
+  #main-page .np-projects {
+    height: 900px;
+  }
+  #main-page .main-photo2 {
+    background-image: url(../images/test2.jpg);
+  }
+  #main-page .email p {
+    font-size: 16px;
+  }
+  #main-page #contact-div {
+    height: 475px !important;
+  }
 }
-
 
 
 

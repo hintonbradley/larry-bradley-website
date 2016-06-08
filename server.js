@@ -4,15 +4,15 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
-//CONNECT TO DATABASE:
-// Old code (post mLabs):
-// mongoose.connect('mongodb://localhost:27017/larrybradley');
+CONNECT TO DATABASE:
+Old code (post mLabs):
+mongoose.connect('mongodb://localhost:27017/larrybradley');
 
 // New code for mLabs:
-var mongodbUri = process.env.MONGODB_URI;
-mongoose.connect(mongodbUri);
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'there is a connection error with the mLabs db:'));
+// var mongodbUri = process.env.MONGODB_URI;
+// mongoose.connect(mongodbUri);
+// var db = mongoose.connection;
+// db.on('error', console.error.bind(console, 'there is a connection error with the mLabs db:'));
 // End of db code.
 
 app.use(bodyParser.json());

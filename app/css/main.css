@@ -263,4 +263,39 @@
   }
 }
 
+@media only screen and (max-device-width: 360px) {
+  html {
+    max-width: 360px;
+  }
+  nav {
+    max-width: 360px;
+  }
+  #main-page .name p {
+    font-size: 3em;
+  }
+  #main-page .inline-block ul {
+    font-size: 12px;
+  }
+  #main-page .inline-block li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #main-page .small-lbphoto {
+    height: 250px;
+    width: 250px;
+  }
+  #main-page .lb-about {
+    padding: 0px;
+    padding-top: 20px;
+    text-align: center;
+  }
+  #main-page .lb-about ul li {
+    text-align: left;
+  }
+  #main-page .lb-about ul {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
 

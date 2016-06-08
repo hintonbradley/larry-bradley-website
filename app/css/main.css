@@ -99,6 +99,7 @@
 
 #main-page .lb-about ul {
   padding-left: 25px;
+  font-size: 20px;
 }
 
 #main-page .projects li {
@@ -288,11 +289,6 @@
   }
   #main-page .lb-about ul li {
     text-align: left;
-  }
-  #main-page .lb-about ul {
-    font-size: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
   }
   #main-page .lb-about p {
     font-size: 14px;

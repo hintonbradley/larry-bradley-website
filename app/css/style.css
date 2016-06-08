@@ -193,9 +193,9 @@ z-index: 10000;
   }
 }
 
-@media only screen and (max-device-width: 1080px) {
+@media only screen and (max-device-width: 360px) {
   html {
-    max-width: 1080px;
+    max-width: 360px;
   }
   .navbar-brand, #nav-btn {
     font-size: 18px;

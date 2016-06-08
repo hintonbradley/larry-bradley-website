@@ -193,3 +193,23 @@ z-index: 10000;
   }
 }
 
+@media only screen and (max-device-width: 468px) {
+  html {
+    max-width: 468px;
+  }
+  .navbar-brand, #nav-btn {
+    font-size: 18px;
+  }
+  .navbar-right .btn-group {
+    padding-right: 10px;
+  }
+  .navbar-brand {
+    padding-left: 10px;
+  }
+  .open>.dropdown-menu {
+    font-size: 18px;
+  }
+}
+
+
+

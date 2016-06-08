@@ -180,10 +180,12 @@ z-index: 10000;
     font-size: 18px;
   }
   .navbar-right .btn-group {
-    padding-right: 70px;
+    padding-right: 10px;
   }
   .navbar-brand {
-    padding-left: 50px;
+    padding-left: 10px;
   }
+  .open>.dropdown-menu {
+    font-size: 18px;
 }
 

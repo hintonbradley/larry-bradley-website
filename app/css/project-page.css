@@ -120,4 +120,8 @@
 	border-color: #B0C1CB;
 }
 
-
+.project-page .btn:hover {
+  background-color: #112347 !important;
+  color: #B0C1CB;
+  border-color: white;
+}

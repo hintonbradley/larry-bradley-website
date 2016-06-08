@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html ng-app='LarryBradley'>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/> -->
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -58,8 +59,7 @@
 <div class="navbar-right float-rt bkgd-red">
 		      <ul>
 		      	<div class="btn-group" dropdown is-open="status.isopen">
-				  <button type="button" class="btn dropdown-toggle bkgd-red white" dropdown-toggle ng-disabled="disabled">
-				    Projects <span class="caret"></span>
+				  <button type="button" id="nav-btn" class="btn dropdown-toggle bkgd-red white" dropdown-toggle ng-disabled="disabled">Projects<span class="caret"></span>
 				  </button>
 				  <ul class="dropdown-menu" role="menu">
 				    <li><a ui-sref="birdhouses">Birdhouses</a></li>

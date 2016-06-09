@@ -150,4 +150,7 @@
 	    height: 100px;
 	    margin: 0 auto;
 	}
+	.project-page .comment-btns {
+	    margin-bottom: 60px;
+	}
 }

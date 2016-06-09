@@ -125,3 +125,24 @@
   color: #B0C1CB;
   border-color: white;
 }
+
+
+@media only screen and (max-device-width: 360px) {
+	.project-page .title-header {
+  		font-size: 32px;
+  	}
+  	.project-page .text-container {
+	    font-size: 20px;
+	}
+	.project-page .lf-proj-div, .project-page .rt-proj-div {
+	    height: 250px;
+	}
+	.project-page .text-container {
+	    margin-top: 0px;
+	}
+	.project-page #cyl-bird img {
+	    width: 144px;
+	    margin: 0 auto;
+	    margin-top: 70px;
+	}
+}

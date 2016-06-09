@@ -234,7 +234,14 @@ z-index: 10000;
   .container-fluid {
     padding-right: 0px;
     padding-left: 0px;
+  }
+  .dropdown-menu {
+    margin-left: -54%;
+    background-color: #933B4B;
+    color: #B0C1CB;
+  }
 }
+
 
 
 

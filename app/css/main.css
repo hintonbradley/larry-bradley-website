@@ -327,6 +327,13 @@
   #main-page #contact-div {
     height: 475px !important;
   }
+  #main-page .back-project {
+    height: 175px;
+    margin-top: -175px;
+  }
+  #main-page .back p {
+    font-size: 12px !important;
+  }
 }
 
 

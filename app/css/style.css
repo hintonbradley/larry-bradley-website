@@ -180,7 +180,29 @@ z-index: 10000;
     margin-left: 5px;
 }
 
-@media only screen and (max-device-width: 480px) {
+a:focus {
+  background-color: red;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand, #nav-btn {
+    font-size: 24px;
+  }
+  .navbar-brand {
+    padding-left: 20px;
+  }
+  .navbar-right .btn-group {
+    padding-right: 0px;
+  }
+  .dropdown-menu {
+    margin-left: -75%;
+  }
+  .open>.dropdown-menu {
+    font-size: 24px;
+}
+
+/*@media only screen and (max-device-width: 480px) {*/
+@media (max-width: 480px) {
   .navbar-brand, #nav-btn {
     font-size: 18px;
   }
@@ -198,7 +220,8 @@ z-index: 10000;
   }
 }
 
-@media only screen and (max-device-width: 360px) {
+/*@media only screen and (max-device-width: 360px) {*/
+@media (max-width: 360px) {
   html, body{
     width:100%;
     overflow-x:hidden;

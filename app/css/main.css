@@ -200,7 +200,8 @@
 
 #main-page .back-project {
   background-size: cover;
-  height: 240px;
+  /*height: 240px;*/
+  height: 100%;
   margin-top: -240px;
   padding: 20px;
 }
@@ -255,13 +256,110 @@
 
 #main-page .lb-about p {
   font-size: 24px;
+  text-align: justify;
 }
 
-@media only screen and (max-device-width: 480px) {
+@media (max-width: 1025px) {
+  #main-page .lb-about p {
+    font-size: 20px;
+  }
+  #main-page .lb-about ul {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 875px) {
+  #main-page .lb-about p {
+    font-size: 16px;
+  }
+  #main-page .lb-about ul {
+    font-size: 16px;
+  }
+  #main-page .small-lbphoto {
+    height: 350px;
+    width: 350px;
+  }
+  #main-page .inline-block li {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+}
+
+@media (max-width: 767px) {
+  #main-page .inline-block ul {
+    font-size: 12px;
+  }
+  #main-page .inline-block li {
+    font-size: 2em;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #main-page .name p {
+    font-size: 4em;
+  }
   #main-page .small-lbphoto {
     height: 300px;
     width: 300px;
   }
+   #main-page .lb-about {
+    padding: 0px;
+    padding-top: 20px;
+    text-align: center;
+  }
+  #main-page .lb-about ul {
+    padding-left: 50px;
+    font-size: 16px;
+  }
+  #main-page .lb-about ul li {
+    text-align: left;
+    margin-left: 18px;
+  }
+  #main-page .lb-about p {
+    font-size: 16px;
+    margin: 0px 50px;
+  }
+  #main-page .non-photo {
+    height: 750px;
+  }
+  #main-page .np-projects {
+    height: 1000px;
+  }
+  #main-page .flipper {
+    width: 60%;
+    height: 190px;
+  }
+  #main-page .back-project {
+    margin-top: -190px;
+  }
+  #main-page #contact-div {
+    height: 600px !important;
+  }
+  #main-page .email p {
+    font-size: 24px;
+  }
+  #main-page .smal-lbphoto {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 650px) {
+  #main-page .flipper {
+    width: 70%;
+  }
+}
+
+@media (max-width: 525px) {
+  #main-page .flipper {
+    width: 90%;
+  }
+}
+
+/*@media only screen and (max-device-width: 480px) {*/
+@media (max-width: 480px) {
+/*  #main-page .small-lbphoto {
+    height: 300px;
+    width: 300px;
+  }*/
   #main-page .name p {
     font-size: 4em;
   }
@@ -269,11 +367,20 @@
     font-size: 1.5em;
   }
   #main-page .lb-about p {
-    font-size: 18px;
+    font-size: 16px;
   }
+    #main-page .flipper {
+    width: 100%;
+  }
+  #main-page .lb-about p {
+    margin: 0px 25px;
+  }
+  #main-page .lb-about ul {
+    padding-left: 26px;
 }
 
-@media only screen and (max-device-width: 360px) {
+/*@media only screen and (max-device-width: 360px) {*/
+@media (max-width: 360px) {
   html {
     max-width: 360px;
   }
@@ -283,9 +390,9 @@
   #main-page .name p {
     font-size: 3em;
   }
-  #main-page .inline-block ul {
+/*  #main-page .inline-block ul {
     font-size: 12px;
-  }
+  }*/
   #main-page .inline-block li {
     padding-left: 10px;
     padding-right: 10px;
@@ -294,7 +401,7 @@
     height: 250px;
     width: 250px;
   }
-  #main-page .lb-about {
+ /* #main-page .lb-about {
     padding: 0px;
     padding-top: 20px;
     text-align: center;
@@ -304,7 +411,7 @@
   }
   #main-page .lb-about p {
     font-size: 14px;
-  }
+  }*/
   #main-page .lb-about ul {
     padding-left: 2em;
     font-size: 14px;
@@ -313,11 +420,12 @@
     background-image: url(../images/test.jpg);
   }
   #main-page .flipper {
+    width: 100%;
     height: 175px;
   }
-  #main-page .np-projects {
+ /* #main-page .np-projects {
     height: 900px;
-  }
+  }*/
   #main-page .main-photo2 {
     background-image: url(../images/test2.jpg);
   }
@@ -333,6 +441,9 @@
   }
   #main-page .back p {
     font-size: 12px !important;
+  }
+  #main-page .lb-about p {
+    margin: 0px 10px;
   }
 }
 

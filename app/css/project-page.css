@@ -126,8 +126,18 @@
   border-color: white;
 }
 
+@media (max-width: 768px) {
 
-@media only screen and (max-device-width: 360px) {
+}
+
+/*@media only screen and (max-device-width: 480px) {*/
+@media (max-width: 480px) {
+	
+}
+
+
+/*@media only screen and (max-device-width: 360px) {*/
+@media (max-width: 360px) {
 	.project-page .title-header {
   		font-size: 32px;
   	}

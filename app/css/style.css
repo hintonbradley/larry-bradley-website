@@ -180,9 +180,9 @@ z-index: 10000;
     margin-left: 5px;
 }
 
-a:focus {
+/*a:focus {
   background-color: red;
-}
+}*/
 
 @media (max-width: 768px) {
   .navbar-brand, #nav-btn {

@@ -149,6 +149,9 @@
 	.project-page .text-container {
     	height: 300px;
 	}
+	#main-page .front p {
+	    padding-top: 55px;
+	}
 }
 
 @media (max-width: 480px) {

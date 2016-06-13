@@ -5,7 +5,6 @@
 body {
   font-family: avant garde;
   background-color: #333333;
-/*  color: #B0C1CB;*/
 }
 
 .text-ctr {
@@ -32,9 +31,6 @@ body {
 .blue {
   color: #112347;
 }
-/*#10264D*/
-/*#1D3364*/
-/*#112347*/
 
 .bkgd-blue {
   background-color: #112347;
@@ -64,6 +60,10 @@ body {
 
 .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover{
   background-color: transparent;
+  color: #B0C1CB;
+}
+
+.navbar-brand:focus {
   color: #B0C1CB;
 }
 
@@ -98,10 +98,6 @@ z-index: 10000;
   padding-left: 50px;
 }
 
-/*.navbar-default, .navbar-brand {
-  color: #B0C1CB !important;
-}*/
-
 /*parallax*/
 .container {
   width: 100% !important;
@@ -110,11 +106,6 @@ z-index: 10000;
 .btn-default {
   color: #B0C1CB;
 }
-
-/*.btn-default:focus {
-  background-color: #933B4B;
-  color: #B0C1CB;
-}*/
 
 /*navbar*/
 .navbar-left {
@@ -141,17 +132,13 @@ z-index: 10000;
   padding: 15px 15px;
 }
 
-.navbar-right ul li {
-  float: right;
-}
-
 .btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
   background-color: #933B4B;
   color: #B0C1CB;
 }
 
 .open>.dropdown-menu {
-/*  margin-right: 30px;*/
+  margin-right: 50px;
   margin-top: -1px;
   font-size: 28px;
   line-height: 20px;
@@ -166,10 +153,6 @@ z-index: 10000;
   background-image: none;
 }
 
-/*.navbar-right .btn:hover {
-  background-color: #933B4B !important;
-}*/
-
 .navbar-right button:focus {
   border: none;
   background-color: #933B4B;
@@ -179,10 +162,6 @@ z-index: 10000;
 .btn .caret {
     margin-left: 5px;
 }
-
-/*a:focus {
-  background-color: red;
-}*/
 
 @media (max-width: 768px) {
   .navbar-brand, #nav-btn {
@@ -201,7 +180,6 @@ z-index: 10000;
     font-size: 24px;
 }
 
-/*@media only screen and (max-device-width: 480px) {*/
 @media (max-width: 480px) {
   .navbar-brand, #nav-btn {
     font-size: 18px;
@@ -218,9 +196,11 @@ z-index: 10000;
   html {
     max-width: 480px;
   }
+  .dropdown-menu {
+    margin-left: -40%;
+  }
 }
 
-/*@media only screen and (max-device-width: 360px) {*/
 @media (max-width: 360px) {
   html, body{
     width:100%;
@@ -241,9 +221,9 @@ z-index: 10000;
   .navbar-brand {
     padding-left: 10px;
   }
-  .open>.dropdown-menu {
+ .dropdown-menu li a {
     font-size: 18px;
-  }
+ }
   #main-page .name p {
     font-size: 3em;
   }
@@ -264,8 +244,5 @@ z-index: 10000;
     color: #B0C1CB;
   }
 }
-
-
-
 
 

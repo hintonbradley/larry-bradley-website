@@ -8,15 +8,6 @@
   margin: 10px;
   overflow: auto;
 }
-
-/*.project-page .comment-date {
-  color: blue;
-}*/
-
-/*.project-page .comment-name {
-  color: yellow;
-}*/
-
 .project-page .submit-comment {
   margin: 0 auto;
 }
@@ -47,7 +38,6 @@
 }
 
 .project-page .title-padding {
-  /*padding-top: 25px;*/
   padding-bottom: 25px;
   margin-bottom: 0px;
 }
@@ -161,7 +151,6 @@
 	}
 }
 
-/*@media only screen and (max-device-width: 480px) {*/
 @media (max-width: 480px) {
 	.project-page .text-container {
 		font-size: 16px;
@@ -174,12 +163,6 @@
 	    width: 200px;
 	    margin: 0 auto;
 	}
-	/*.project-page .rt-proj-div {
-    	height: 200px;
-    }
-    .project-page .lf-proj-div, .project-page .rt-proj-div {
-    height: 200px;
-	}*/
     .project-page .slides-div {
     margin: 10px 20px;
 	}
@@ -196,8 +179,6 @@
 	}
 }
 
-
-/*@media only screen and (max-device-width: 360px) {*/
 @media (max-width: 360px) {
 	.project-page .title-header {
   		font-size: 32px;

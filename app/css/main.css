@@ -4,7 +4,6 @@
   background-repeat: no-repeat;
   height: 700px;
   position: relative;
-  /*adding to have image span full width*/
   background-size: cover;
 }
 
@@ -19,7 +18,6 @@
   position: absolute;
   text-shadow: 0 2px 0 black, 0 0 10px black;
   width: 100%;
-  /*width: 1280px;*/
 }
 
 #main-page .non-photo {
@@ -110,7 +108,7 @@
   padding-top: 40px;
 }
 
-/*flipp*/
+/*FLIP DIVS*/
 
 /* entire container, keeps perspective */
 #main-page .flip-container {
@@ -133,8 +131,6 @@
 #main-page .flipper {
   transition: 0.6s;
   transform-style: preserve-3d;
-/*  position: relative;*/
-  /*margin-top: 15px;*/
   margin: auto;
   width: 90%;
   height: 240px;
@@ -143,18 +139,11 @@
 /* hide back of pane during swap */
 #main-page .front, #main-page .back {
   backface-visibility: hidden;
-  /*position: absolute;*/
-  /*top: 0;
-  left: 0;*/
 }
 
 /* front pane, placed above back */
 #main-page .front {
   transform: rotateY(0deg);
-/*adding for transparency*/
-  /*position: relative;*/
-  /*z-index: 5;*/
-  /*color: #000;*/
   border-radius: 5px;
   border: 5px solid #112347;
   font-size: 12px;
@@ -188,19 +177,14 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /*width: 450px;*/
   height: 240px;
-
-/*adding for transparency*/
-  /*position: absolute;*/
-  /*z-index: -1;*/
+  /*adding for transparency*/
   opacity: .4;
   height: 100%;
 }
 
 #main-page .back-project {
   background-size: cover;
-  /*height: 240px;*/
   height: 100%;
   margin-top: -240px;
   padding: 20px;
@@ -214,7 +198,7 @@
 }
 
 #main-page .back p {
-  font-size: 14px !important;
+  font-size: 16px;
   text-shadow: none !important;
   z-index: 5;
   width: 100%;
@@ -265,6 +249,9 @@
   }
   #main-page .lb-about ul {
     font-size: 20px;
+  }
+  #main-page .back p {
+    font-size: 14px !important;
   }
 }
 
@@ -354,12 +341,7 @@
   }
 }
 
-/*@media only screen and (max-device-width: 480px) {*/
 @media (max-width: 480px) {
-/*  #main-page .small-lbphoto {
-    height: 300px;
-    width: 300px;
-  }*/
   #main-page .name p {
     font-size: 4em;
   }
@@ -379,7 +361,6 @@
     padding-left: 26px;
 }
 
-/*@media only screen and (max-device-width: 360px) {*/
 @media (max-width: 360px) {
   html {
     max-width: 360px;
@@ -390,9 +371,6 @@
   #main-page .name p {
     font-size: 3em;
   }
-/*  #main-page .inline-block ul {
-    font-size: 12px;
-  }*/
   #main-page .inline-block li {
     padding-left: 10px;
     padding-right: 10px;
@@ -401,17 +379,6 @@
     height: 250px;
     width: 250px;
   }
- /* #main-page .lb-about {
-    padding: 0px;
-    padding-top: 20px;
-    text-align: center;
-  }
-  #main-page .lb-about ul li {
-    text-align: left;
-  }
-  #main-page .lb-about p {
-    font-size: 14px;
-  }*/
   #main-page .lb-about ul {
     padding-left: 2em;
     font-size: 14px;
@@ -423,9 +390,6 @@
     width: 100%;
     height: 175px;
   }
- /* #main-page .np-projects {
-    height: 900px;
-  }*/
   #main-page .main-photo2 {
     background-image: url(../images/test2.jpg);
   }
@@ -446,6 +410,4 @@
     margin: 0px 10px;
   }
 }
-
-
 

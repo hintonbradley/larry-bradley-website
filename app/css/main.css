@@ -173,6 +173,10 @@
   background-image: url(../images/mini-homes/ghome-front.jpg);
 }
 
+#main-page .front-pethouses {
+  background-image: url(../images/pethouses/catLeft.jpg);
+}
+
 #main-page .front-project {
   background-size: cover;
   background-repeat: no-repeat;

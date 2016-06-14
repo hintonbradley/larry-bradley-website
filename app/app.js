@@ -25,5 +25,10 @@ angular.module('LarryBradley', ['ui.router','angular-parallax','ui.bootstrap','n
             templateUrl: "app/views/mini-houses.html",
             controller: "ProjectController"
         })
+        .state('pethouses', {
+            url: "/pethouses",
+            templateUrl: "app/views/pethouses.html",
+            controller: "ProjectController"
+        })
 	})
 }());

@@ -68,6 +68,35 @@
 			}
 		];
 
+		//Pet Houses
+		$scope.catHouse = [
+			{
+				"image":"app/images/pethouses/catCenter.jpg","active":true
+			},
+			{
+				"image":"app/images/pethouses/catLeft.jpg","active":false
+			},
+			{
+				"image":"app/images/pethouses/catRight.jpg","active":false
+			}
+			// {
+			// 	"image":"app/images/pethouses/catHead.jpg","active":false
+			// }
+		];
+
+		$scope.dogHouse = [
+			{
+				"image":"app/images/pethouses/dogFront2.png","active":true
+			},
+			{
+				"image":"app/images/pethouses/dogSide2.png","active":false
+			},
+			{
+				"image":"app/images/pethouses/dogBack2.png","active":false
+			}
+		];
+
+
 		// COMMENTS
 		$scope.showFields = false;
 		$scope.addComment = true;
@@ -127,6 +156,9 @@
 				getComments(true, 'birdhouses');
 			}
 			else if ($state.$current.includes.minihouses===true) {
+				getComments(true, 'minihouses');
+			}
+			else if ($state.$current.includes.pethouses===true) {
 				getComments(true, 'minihouses');
 			}
 			else {

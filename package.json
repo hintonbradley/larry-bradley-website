@@ -1,6 +1,9 @@
 {
   "name": "larrybradley",
   "version": "1.0.0",
+  "engines": {
+    "node": "4.2.2"
+  },
   "dependencies": {
     "body-parser": "^1.15.1",
     "bower": "^1.7.9",

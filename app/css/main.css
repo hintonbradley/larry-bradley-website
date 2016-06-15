@@ -113,6 +113,7 @@
 /* entire container, keeps perspective */
 #main-page .flip-container {
   perspective: 1000px;
+  -webkit-perspective: 1000; 
 }
 
 /* flip the pane when hovered */
@@ -140,6 +141,9 @@
 /* hide back of pane during swap */
 #main-page .front, #main-page .back {
   backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;   
+  -webkit-transition: all .5s ease-in-out;
+
 }
 
 /* front pane, placed above back */
@@ -148,6 +152,7 @@
   border-radius: 5px;
   border: 5px solid #112347;
   font-size: 12px;
+  -webkit-transform: rotateY(0deg); 
 }
 
 /* back, initially hidden pane */
@@ -156,6 +161,7 @@
   border-radius: 5px;
   border: 5px solid #933B4B;
   font-size: 12px;
+  -webkit-transform: rotateY(180deg); 
 }
 
 #main-page .flip-proj {

@@ -134,7 +134,7 @@
   transition: 0.6s;
   transform-style: preserve-3d;
   margin: auto;
-  width: 90%;
+  width: 100%;
   height: 240px;
 }
 
@@ -166,6 +166,8 @@
 
 #main-page .flip-proj {
   margin-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 #main-page .front-mailbox {
@@ -264,6 +266,10 @@
   #main-page .back p {
     font-size: 14px !important;
   }
+  #main-page .flip-proj {
+  padding-left: 15px;
+  padding-right: 15px;
+  }
 }
 
 @media (max-width: 875px) {
@@ -326,7 +332,7 @@
     height: 1000px;
   }
   #main-page .flipper {
-    width: 60%;
+    width: 100%;
     height: 190px;
   }
   #main-page .back-project {
@@ -343,19 +349,35 @@
   }
 }
 
+@media (max-width: 767px) {
+  #main-page .flip-proj {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
 @media (max-width: 650px) {
-  #main-page .flipper {
-    width: 70%;
+  #main-page .flip-proj {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
 @media (max-width: 525px) {
-  #main-page .flipper {
-    width: 90%;
+  #main-page .flip-proj {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
 @media (max-width: 480px) {
+  #main-page .main-photo1 {
+    background-image: url(../images/test.jpg);
+    max-width: 480px;
+  }
+  #main-page .main-photo2 {
+    background-image: url(../images/test2.jpg);
+    max-width: 480px;
+  }
   #main-page .name p {
     font-size: 4em;
   }
@@ -397,15 +419,8 @@
     padding-left: 2em;
     font-size: 14px;
   }
-  #main-page .main-photo1 {
-    background-image: url(../images/test.jpg);
-  }
   #main-page .flipper {
-    width: 100%;
     height: 175px;
-  }
-  #main-page .main-photo2 {
-    background-image: url(../images/test2.jpg);
   }
   #main-page .email p {
     font-size: 16px;

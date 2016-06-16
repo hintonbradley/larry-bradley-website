@@ -120,6 +120,11 @@
     margin: auto;
 }
 
+.project-page #cyl-bird {
+	width: 60%;
+    margin: auto;
+}
+
 @media (max-width: 1280px) {
 	.project-page .text-container {
 		font-size: 24px;
@@ -151,6 +156,8 @@
     	width: 80%;
     	margin: 0 auto;
     }
+    .project-page #cyl-bird {
+		width: 100%;
 }
 
 @media (max-width: 480px) {

@@ -163,7 +163,43 @@ z-index: 10000;
     margin-left: 5px;
 }
 
+@media (max-width: 1280px) {
+  html, body{
+    width:100%;
+    overflow-x:hidden;
+  }
+  html {
+    max-width: 1280px;
+  }
+  nav {
+    max-width: 1280px;
+  }
+}
+
+@media (max-width: 1024px) {
+  html, body{
+    width:100%;
+    overflow-x:hidden;
+  }
+  html {
+    max-width: 1024px;
+  }
+  nav {
+    max-width: 1024px;
+  }
+}
+
 @media (max-width: 768px) {
+  html, body{
+    width:100%;
+    overflow-x:hidden;
+  }
+  html {
+    max-width: 768px;
+  }
+  nav {
+    max-width: 768px;
+  }
   .navbar-brand, #nav-btn {
     font-size: 24px;
   }
@@ -181,6 +217,16 @@ z-index: 10000;
 }
 
 @media (max-width: 480px) {
+  html, body{
+    width:100%;
+    overflow-x:hidden;
+  }
+  html {
+    max-width: 480px;
+  }
+  nav {
+    max-width: 480px;
+  }
   .navbar-brand, #nav-btn {
     font-size: 18px;
   }

@@ -38,7 +38,6 @@
 }
 
 .project-page .title-padding {
-  /*padding-bottom: 25px;*/
   margin-bottom: 0px;
 }
 
@@ -49,11 +48,6 @@
 .project-page .project-row {
   height: 100%;
 }
-
-/*.project-page .lf-proj-div
-, .project-page .rt-proj-div {
-  height: 425px;
-}*/
 
 .project-page .addedComment {
   margin: auto;
@@ -77,7 +71,6 @@
 }
 
 .project-page img {
-  /*max-height: 395px;*/
   width: 100%;
 }
 
@@ -97,7 +90,6 @@
 /*PROJECT TEXT*/
 .project-page .text-container, .project-page .carousel-container {
   font-size: 28px;
-  /*margin-top: 20px;*/
   display: flex;
   flex-direction: column;
   min-height: 10vh;
@@ -134,11 +126,6 @@
 	.project-page .text-container {
 		font-size: 20px;
 	}
-	.project-page .carousel-container
-	/*, .project-page .text-container*/
-	{
-    /*height: 325px;*/
-	}
 	.project-page #cyl-bird img {
 	    width: 300px;
 	}
@@ -155,12 +142,6 @@
 	}
 	.project-page .project ul {
     	margin-left: 22px;
-	}
-/*	.project-page .text-container {
-    	height: 300px;
-	}*/
-	#main-page .front p {
-	    padding-top: 55px;
 	}
 	.project-page .comment {
     	width: 80%;

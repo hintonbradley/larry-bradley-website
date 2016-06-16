@@ -93,7 +93,7 @@
 			<div ng-repeat="comment in comments">
 				<div class="comment bkgd-blue white">
 					<span> Posted by: <span class="red">{{comment.name}}</span></span>
-					<span class="blue float-rt">{{comment.date | date: 'MM/dd/yyyy hh:mm'}}</span><br>
+					<span class="red float-rt">{{comment.date | date: 'MM/dd/yyyy hh:mm'}}</span><br>
 					{{comment.description}}
 				</div>
 			</div>

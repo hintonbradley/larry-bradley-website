@@ -283,7 +283,7 @@
 }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #main-page .inline-block ul {
     font-size: 12px;
   }
@@ -291,6 +291,9 @@
     font-size: 2em;
     padding-left: 15px;
     padding-right: 15px;
+  }
+  #main-page .front p {
+    padding-top: 55px;
   }
   #main-page .name p {
     font-size: 4em;

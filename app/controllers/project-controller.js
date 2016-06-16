@@ -86,13 +86,13 @@
 
 		$scope.dogHouse = [
 			{
-				"image":"app/images/pethouses/dogFront2.png","active":true
+				"image":"app/images/pethouses/dogFront.jpg","active":true
 			},
 			{
-				"image":"app/images/pethouses/dogSide2.png","active":false
+				"image":"app/images/pethouses/dogSide.jpg","active":false
 			},
 			{
-				"image":"app/images/pethouses/dogBack2.png","active":false
+				"image":"app/images/pethouses/dogBack.jpg","active":false
 			}
 		];
 

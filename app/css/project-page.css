@@ -115,6 +115,10 @@
 .project-page .full-container {
 	margin-bottom: 50px;
 }
+.project-page #doghouse {
+    width: 50%;
+    margin: auto;
+}
 
 @media (max-width: 1280px) {
 	.project-page .text-container {

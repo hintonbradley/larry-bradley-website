@@ -210,7 +210,7 @@
 	.project-page #cyl-bird img {
 	    width: 144px;
 	    margin: 0 auto;
-	    margin-top: 70px;
+	    /*margin-top: 70px;*/
 	}
 	.project-page .comment {
 	    width: 90%;

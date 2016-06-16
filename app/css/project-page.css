@@ -30,7 +30,7 @@
   width: 95%;
   margin: 0 auto;
   margin-bottom: 20px;
-  margin-top: 45px;
+  margin-top: 20px;
 }
 
 .project-page .project {
@@ -38,7 +38,7 @@
 }
 
 .project-page .title-padding {
-  padding-bottom: 25px;
+  /*padding-bottom: 25px;*/
   margin-bottom: 0px;
 }
 
@@ -50,9 +50,10 @@
   height: 100%;
 }
 
-.project-page .lf-proj-div, .project-page .rt-proj-div {
+/*.project-page .lf-proj-div
+, .project-page .rt-proj-div {
   height: 425px;
-}
+}*/
 
 .project-page .addedComment {
   margin: auto;
@@ -76,7 +77,7 @@
 }
 
 .project-page img {
-  max-height: 395px;
+  /*max-height: 395px;*/
   width: 100%;
 }
 
@@ -93,9 +94,13 @@
   font-size: 48px;
 }
 
-.project-page .text-container {
+/*PROJECT TEXT*/
+.project-page .text-container, .project-page .carousel-container {
   font-size: 28px;
-  margin-top: 20px;
+  /*margin-top: 20px;*/
+  display: flex;
+  flex-direction: column;
+  min-height: 10vh;
 }
 
 .project-page .submit-comment input {
@@ -126,8 +131,10 @@
 	.project-page .text-container {
 		font-size: 20px;
 	}
-	.project-page .carousel-container, .project-page .text-container{
-    height: 325px;
+	.project-page .carousel-container
+	/*, .project-page .text-container*/
+	{
+    /*height: 325px;*/
 	}
 	.project-page #cyl-bird img {
 	    width: 300px;
@@ -146,9 +153,9 @@
 	.project-page .project ul {
     	margin-left: 22px;
 	}
-	.project-page .text-container {
+/*	.project-page .text-container {
     	height: 300px;
-	}
+	}*/
 	#main-page .front p {
 	    padding-top: 55px;
 	}
@@ -157,11 +164,17 @@
 @media (max-width: 480px) {
 	.project-page .text-container {
 		font-size: 16px;
-		height: 240px;
+		margin-top: 0px;
 	}
-	.project-page .carousel-container {
+	.project-page #mailbox-siding {
+		flex: 1;
+	}
+	.project-page .project-row .title-header {
+		padding-bottom: 0px;
+	}
+/*	.project-page .carousel-container {
 		height: 250px;
-	}
+	}*/
 	.project-page #cyl-bird img {
 	    width: 200px;
 	    margin: 0 auto;
@@ -189,9 +202,9 @@
   	.project-page .text-container {
 	    font-size: 20px;
 	}
-	.project-page .lf-proj-div, .project-page .rt-proj-div {
+/*	.project-page .lf-proj-div, .project-page .rt-proj-div {
 	    height: 250px;
-	}
+	}*/
 	.project-page .text-container {
 	    margin-top: 0px;
 	}

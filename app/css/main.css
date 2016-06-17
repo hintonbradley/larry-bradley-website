@@ -381,12 +381,12 @@ div:target.back {
 @media (max-width: 480px) {
   #main-page .main-photo1 {
     background-image: url(../images/test.jpg);
-    width: 100%;
+    /*width: 100%;*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /*max-width: 480px;*/
-    /*background-attachment:scroll;*/
+    max-width: 480px;
+    background-attachment:scroll;
     -webkit-background-size: cover;
   }
   #main-page .main-photo2 {

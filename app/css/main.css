@@ -386,7 +386,7 @@ div:target.back {
     background-repeat: no-repeat;
     background-position: center;
     /*max-width: 480px;*/
-    background-attachment:scroll;
+    /*background-attachment:scroll;*/
     -webkit-background-size: cover;
   }
   #main-page .main-photo2 {

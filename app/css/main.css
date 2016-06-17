@@ -165,10 +165,10 @@
 }
 
 /*Adding for iPhone and iPad*/
-div:target#flip #front {  
+div:target.front {  
   -webkit-transform: rotateY(-180deg); 
 } 
-div:target#flip #back {   
+div:target.back {   
   -webkit-transform: rotateY(0deg); 
 } 
 /*End added code*/
@@ -381,11 +381,18 @@ div:target#flip #back {
 @media (max-width: 480px) {
   #main-page .main-photo1 {
     background-image: url(../images/test.jpg);
-    max-width: 480px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*max-width: 480px;*/
+    background-attachment:scroll;
+    -webkit-background-size: cover;
   }
   #main-page .main-photo2 {
     background-image: url(../images/test2.jpg);
     max-width: 480px;
+    background-attachment:scroll;
   }
   #main-page .name p {
     font-size: 4em;

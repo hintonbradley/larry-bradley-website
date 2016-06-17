@@ -164,6 +164,15 @@
   -webkit-transform: rotateY(180deg); 
 }
 
+/*Adding for iPhone and iPad*/
+div:target#flip #front {  
+  -webkit-transform: rotateY(-180deg); 
+} 
+div:target#flip #back {   
+  -webkit-transform: rotateY(0deg); 
+} 
+/*End added code*/
+
 #main-page .flip-proj {
   margin-bottom: 30px;
   padding-left: 50px;

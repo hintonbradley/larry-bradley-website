@@ -257,7 +257,7 @@ div:target.back {
 }
 
 #main-page #contact-div {
-  height: 600px !important;
+  height: 600px;
 }
 
 #main-page .lb-about p {
@@ -295,7 +295,7 @@ div:target.back {
   #main-page .inline-block li {
     padding-left: 15px;
     padding-right: 15px;
-}
+  }
 }
 
 @media (max-width: 768px) {
@@ -347,9 +347,6 @@ div:target.back {
   #main-page .back-project {
     margin-top: -190px;
   }
-  #main-page #contact-div {
-    height: 600px !important;
-  }
   #main-page .email p {
     font-size: 24px;
   }
@@ -363,11 +360,30 @@ div:target.back {
     padding-left: 100px;
     padding-right: 100px;
   }
+}
 
 @media (max-width: 650px) {
   #main-page .flip-proj {
     padding-left: 50px;
     padding-right: 50px;
+  }
+  #main-page .main-photo1 {
+    background-image: url(../images/test.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 767px;
+    background-attachment:scroll;
+    -webkit-background-size: cover;
+  }
+  #main-page .main-photo2 {
+    background-image: url(../images/test2.jpg);
+    max-width: 480px;
+    background-attachment:scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -379,21 +395,6 @@ div:target.back {
 }
 
 @media (max-width: 480px) {
-  #main-page .main-photo1 {
-    background-image: url(../images/test.jpg);
-    /*width: 100%;*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 480px;
-    background-attachment:scroll;
-    -webkit-background-size: cover;
-  }
-  #main-page .main-photo2 {
-    background-image: url(../images/test2.jpg);
-    max-width: 480px;
-    background-attachment:scroll;
-  }
   #main-page .name p {
     font-size: 4em;
   }
@@ -411,6 +412,19 @@ div:target.back {
   }
   #main-page .lb-about ul {
     padding-left: 26px;
+  }
+  #main-page #introduction {
+    height: 700px;
+  }
+  #main-page #firstParImg, #main-page #secondParImg  {
+    height: 550px;
+  }
+  #main-page #bradleyProjs{
+    height: 1000px;
+  }
+  #main-page #contact-div {
+    height: 700px;
+  }
 }
 
 @media (max-width: 360px) {

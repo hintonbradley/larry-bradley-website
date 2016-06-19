@@ -11,7 +11,7 @@
 				"image":"app/images/birdhouses/1front.jpg","active":true
 			},
 			{
-				"image":"app/images/birdhouses/1side.jpg","active":false
+				"image":"app/images/birdhouses/birdhouse1.png","active":false
 			},
 			{
 				"image":"app/images/birdhouses/1back.jpg","active":false

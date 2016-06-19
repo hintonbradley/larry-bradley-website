@@ -258,10 +258,10 @@
 
 @media (max-width: 1025px) {
   #main-page .lb-about p {
-    font-size: 20px;
+    font-size: 24px;
   }
   #main-page .lb-about ul {
-    font-size: 20px;
+    font-size: 24px;
   }
   #main-page .back p {
     font-size: 14px !important;
@@ -304,14 +304,10 @@
 
 @media (max-width: 875px) {
   #main-page .lb-about p {
-    font-size: 16px;
+    font-size: 20px;
   }
   #main-page .lb-about ul {
-    font-size: 16px;
-  }
-  #main-page .small-lbphoto {
-    height: 350px;
-    width: 350px;
+    font-size: 20px;
   }
   #main-page .inline-block li {
     padding-left: 15px;
@@ -326,6 +322,10 @@
 }
 
 @media (max-width: 768px) {
+  #main-page .small-lbphoto {
+    height: 350px;
+    width: 350px;
+  }
   #main-page .inline-block ul {
     font-size: 12px;
   }

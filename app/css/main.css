@@ -322,10 +322,6 @@
 }
 
 @media (max-width: 768px) {
-  #main-page .small-lbphoto {
-    height: 350px;
-    width: 350px;
-  }
   #main-page .inline-block ul {
     font-size: 12px;
   }
@@ -341,8 +337,8 @@
     font-size: 4em;
   }
   #main-page .small-lbphoto {
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
   }
    #main-page .lb-about {
     padding: 0px;
@@ -361,12 +357,6 @@
     font-size: 16px;
     margin: 0px 50px;
   }
-  #main-page .non-photo {
-    height: 750px;
-  }
-  #main-page .np-projects {
-    height: 1000px;
-  }
   #main-page .flipper {
     width: 100%;
     height: 190px;
@@ -379,12 +369,6 @@
   }
   #main-page .smal-lbphoto {
     margin-top: 0px;
-  }
-  #main-page .main-photo1 {
-    max-width: 768px;
-  }
-  #main-page .main-photo2 {
-    max-width: 768px;
   }
 }
 
@@ -408,6 +392,10 @@
 }
 
 @media (max-width: 650px) {
+  #main-page .small-lbphoto {
+    height: 350px;
+    width: 350px;
+  }
   #main-page .flip-proj {
     padding-left: 50px;
     padding-right: 50px;

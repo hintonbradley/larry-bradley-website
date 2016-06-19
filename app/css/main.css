@@ -258,10 +258,10 @@
 
 @media (max-width: 1025px) {
   #main-page .lb-about p {
-    font-size: 24px;
+    font-size: 20px;
   }
   #main-page .lb-about ul {
-    font-size: 24px;
+    font-size: 20px;
   }
   #main-page .back p {
     font-size: 14px !important;
@@ -289,7 +289,7 @@
     background-position: center;
   }
   #main-page #introduction {
-    height: 1000px;
+    height: 650px;
   }
   #main-page #firstParImg, #main-page #secondParImg {
     height: 1200px;
@@ -303,6 +303,9 @@
 }
 
 @media (max-width: 875px) {
+  #main-page #introduction {
+    height: 1000px;
+  }
   #main-page .inline-block li {
     padding-left: 15px;
     padding-right: 15px;

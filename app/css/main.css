@@ -164,15 +164,6 @@
   -webkit-transform: rotateY(180deg); 
 }
 
-/*Adding for iPhone and iPad*/
-div:target.front {  
-  -webkit-transform: rotateY(-180deg); 
-} 
-div:target.back {   
-  -webkit-transform: rotateY(0deg); 
-} 
-/*End added code*/
-
 #main-page .flip-proj {
   margin-bottom: 30px;
   padding-left: 50px;
@@ -279,6 +270,30 @@ div:target.back {
   padding-left: 15px;
   padding-right: 15px;
   }
+  #main-page .main-photo1 {
+    background-image: url(../images/test.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1025px;
+    background-attachment:scroll;
+    -webkit-background-size: cover;
+  }
+  #main-page .main-photo2 {
+    background-image: url(../images/test2.jpg);
+    max-width: 1025px;
+    background-attachment:scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #main-page .non-photo {
+    height: 640px;
+  }
+  #main-page .photo {
+    height: 1000px;
+  }
 }
 
 @media (max-width: 875px) {
@@ -295,6 +310,12 @@ div:target.back {
   #main-page .inline-block li {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  #main-page .main-photo1 {
+    max-width: 875px;
+  }
+  #main-page .main-photo2 {
+    max-width: 875px;
   }
 }
 
@@ -353,6 +374,12 @@ div:target.back {
   #main-page .smal-lbphoto {
     margin-top: 0px;
   }
+  #main-page .main-photo1 {
+    max-width: 768px;
+  }
+  #main-page .main-photo2 {
+    max-width: 768px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -368,22 +395,10 @@ div:target.back {
     padding-right: 50px;
   }
   #main-page .main-photo1 {
-    background-image: url(../images/test.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 767px;
-    background-attachment:scroll;
-    -webkit-background-size: cover;
+    max-width: 650px;
   }
   #main-page .main-photo2 {
-    background-image: url(../images/test2.jpg);
-    max-width: 480px;
-    background-attachment:scroll;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    max-width: 650px;
   }
 }
 
@@ -391,6 +406,12 @@ div:target.back {
   #main-page .flip-proj {
     padding-left: 0px;
     padding-right: 0px;
+  }
+  #main-page .main-photo1 {
+    max-width: 525px;
+  }
+  #main-page .main-photo2 {
+    max-width: 525px;
   }
 }
 
@@ -424,6 +445,12 @@ div:target.back {
   }
   #main-page #contact-div {
     height: 700px;
+  }
+  #main-page .main-photo1 {
+    max-width: 480px;
+  }
+  #main-page .main-photo2 {
+    max-width: 480px;
   }
 }
 
@@ -467,6 +494,12 @@ div:target.back {
   }
   #main-page .lb-about p {
     margin: 0px 10px;
+  }
+  #main-page .main-photo1 {
+    max-width: 360px;
+  }
+  #main-page .main-photo2 {
+    max-width: 360px;
   }
 }
 

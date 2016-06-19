@@ -288,11 +288,17 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-  #main-page .non-photo {
+  #main-page #introduction {
     height: 640px;
   }
-  #main-page .photo {
+  #main-page #firstParImg, #main-page #secondParImg {
     height: 1000px;
+  }
+  #main-page #bradleyProjs {
+    height: 500px;
+  }
+  #main-page #contact-div {
+    height: 640px;
   }
 }
 

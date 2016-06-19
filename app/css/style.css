@@ -82,7 +82,7 @@ z-index: 10000;
 }
 
 .navbar-brand, #nav-btn {
-  font-size: 28px;
+  font-size: 32px;
 }
 
 .navbar-right .btn-group {
@@ -173,6 +173,12 @@ z-index: 10000;
   }
   nav {
     max-width: 1280px;
+  }
+}
+
+@media (max-width: 1224px) {
+  .navbar-brand, #nav-btn {
+    font-size: 28px;
   }
 }
 

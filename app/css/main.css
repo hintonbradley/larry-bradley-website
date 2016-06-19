@@ -210,7 +210,7 @@
   position: absolute;
   z-index: 5;
   width: 100%;
-  padding-top: 75px;
+  padding-top: 125px;
 }
 
 #main-page .back p {
@@ -231,7 +231,7 @@
 }
 
 #main-page #mailbox-proj-title p {
-  padding-top: 60px;
+  padding-top: 20px;
 }
 
 #main-page a:hover {
@@ -292,8 +292,8 @@
   #main-page .back p {
   font-size: 16px;
   }
-  #main-page #mailbox-proj-title p {
-    padding-top: 20px;
+  #main-page .front p {
+    padding-top: 75px;
   }
 }
 

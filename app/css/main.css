@@ -258,10 +258,10 @@
 
 @media (max-width: 1025px) {
   #main-page .lb-about p {
-    font-size: 28px;
+    font-size: 24px;
   }
   #main-page .lb-about ul {
-    font-size: 28px;
+    font-size: 24px;
   }
   #main-page .back p {
     font-size: 14px !important;
@@ -289,7 +289,7 @@
     background-position: center;
   }
   #main-page #introduction {
-    height: 900px;
+    height: 1000px;
   }
   #main-page #firstParImg, #main-page #secondParImg {
     height: 1200px;
@@ -316,6 +316,12 @@
 }
 
 @media (max-width: 768px) {
+  #main-page .lb-about p {
+    font-size: 20px;
+  }
+  #main-page .lb-about ul {
+    font-size: 20px;
+  }
   #main-page .inline-block ul {
     font-size: 12px;
   }
@@ -348,7 +354,6 @@
     margin-left: 18px;
   }
   #main-page .lb-about p {
-    font-size: 16px;
     margin: 0px 50px;
   }
   #main-page .flipper {

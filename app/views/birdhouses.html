@@ -82,7 +82,7 @@
 												<div id="regularError" class="alert alert-danger" ng-show="errorMessage">{{errorMessage}}</div>
 											</div>
 											<label>Name:</label>
-											<input class="form-control" type="text" required ng-model="newComment.name" autofocus="true"/>
+											<input class="form-control" type="text" required ng-model="newComment.name" autofocus:true/>
 											<label>Comment:</label>
 											<textarea class="form-control" rows="4" required ng-model="newComment.description"></textarea>
 											<div class="comment-btns">

@@ -289,7 +289,7 @@
     background-position: center;
   }
   #main-page #introduction {
-    height: 640px;
+    height: 850px;
   }
   #main-page #firstParImg, #main-page #secondParImg {
     height: 1400px;
@@ -392,6 +392,18 @@
   #main-page .flip-proj {
     padding-left: 100px;
     padding-right: 100px;
+  }
+  #main-page #introduction {
+    height: 640px;
+  }
+  #main-page #firstParImg, #main-page #secondParImg {
+    height: 1400px;
+  }
+  #main-page #bradleyProjs {
+    height: 1000px;
+  }
+  #main-page #contact-div {
+    height: 700px;
   }
 }
 

@@ -231,7 +231,7 @@
 }
 
 #main-page #mailbox-proj-title p {
-  padding-top: 20px;
+  padding-top: 60px;
 }
 
 #main-page a:hover {
@@ -291,6 +291,9 @@
   }
   #main-page .back p {
   font-size: 16px;
+  }
+  #main-page #mailbox-proj-title p {
+    padding-top: 20px;
   }
   #main-page .front p {
     padding-top: 75px;

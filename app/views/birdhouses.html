@@ -6,8 +6,8 @@
 		  		<p class="text-ctr title-padding title-header">5-Chamber Design</p>
 		    	<div class="col-md-7 col-xs-12 lf-proj-div carousel-container">
 			    	<div class="slides-div">
-				    	<carousel interval="myInterval" no-pause=true>
-					      	<slide ng-repeat="slide in fiveChamber" active="slide.active" no-pause=true>
+				    	<carousel interval="myInterval" no-pause=false>
+					      	<slide ng-repeat="slide in fiveChamber" active="slide.active" no-pause=false>
 					        	<img ng-src="{{slide.image}}">
 					        	<div class="carousel-caption">
 					          		<p>{{slide.text}}</p>
@@ -42,8 +42,8 @@
 			    </div>
 		    	<div class="col-md-7 col-xs-12 rt-proj-div carousel-container">
 			    	<div class="slides-div">
-				    	<carousel interval="myInterval" no-pause=true>
-					      	<slide ng-repeat="slide in cylindrical" active="slide.active" no-pause=true>
+				    	<carousel interval="myInterval" no-pause=false>
+					      	<slide ng-repeat="slide in cylindrical" active="slide.active" no-pause=false>
 					      		<div id="cyl-bird">
 					        		<img ng-src="{{slide.image}}">
 					        	</div>

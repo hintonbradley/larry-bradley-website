@@ -2,7 +2,7 @@
   background-attachment: fixed;
   background-position: 50% 0;
   background-repeat: no-repeat;
-  height: 700px;
+  height: 850px;
   position: relative;
   background-size: cover;
 }
@@ -22,7 +22,7 @@
 
 #main-page .non-photo {
   padding: 0px 10px;
-  height: 700px;
+  height: 1000px;
   position: relative;
   background-color: #333333;
   color: #B0C1CB;
@@ -31,10 +31,6 @@
 #main-page .proj-pad {
   padding-top: 20px;
   padding-bottom: 10px;
-}
-
-#main-page #introduction {
-  height: 1100px;
 }
 
 #main-page #lb-title ul {
@@ -280,6 +276,9 @@
   }
   #main-page .non-photo {
     height: 700px;
+  }
+  #main-page .photo {
+    height: 850px;
   }
 }
 

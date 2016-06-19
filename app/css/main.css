@@ -168,7 +168,7 @@
 }
 
 #main-page .flip-proj {
-  margin-bottom: 30px;
+  margin-bottom: 80px;
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -214,7 +214,7 @@
 }
 
 #main-page .back p {
-  font-size: 16px;
+  font-size: 24px;
   text-shadow: none !important;
   z-index: 5;
   width: 100%;
@@ -231,7 +231,7 @@
 }
 
 #main-page #mailbox-proj-title p {
-  padding-top: 20px;
+  padding-top: 60px;
 }
 
 #main-page a:hover {
@@ -285,6 +285,16 @@
   }
   #main-page .back-project {
     margin-top: -240px;
+  }
+  #main-page .flip-proj {
+    margin-bottom: 50px;
+  }
+  #main-page .back p {
+  font-size: 16px;
+  }
+  #main-page #mailbox-proj-title p {
+    padding-top: 20px;
+  }
 }
 
 @media (max-width: 1025px) {

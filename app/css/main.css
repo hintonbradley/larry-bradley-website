@@ -318,9 +318,11 @@
 @media (max-width: 768px) {
   #main-page .lb-about p {
     font-size: 20px;
+    margin: 0px 50px;
   }
   #main-page .lb-about ul {
     font-size: 20px;
+    padding-left: 50px;
   }
   #main-page .inline-block ul {
     font-size: 12px;
@@ -345,16 +347,9 @@
     padding-top: 20px;
     text-align: center;
   }
-  #main-page .lb-about ul {
-    padding-left: 50px;
-    font-size: 16px;
-  }
   #main-page .lb-about ul li {
     text-align: left;
     margin-left: 18px;
-  }
-  #main-page .lb-about p {
-    margin: 0px 50px;
   }
   #main-page .flipper {
     width: 100%;

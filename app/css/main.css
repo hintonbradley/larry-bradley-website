@@ -28,7 +28,7 @@
   color: #B0C1CB;
 }
 
-#main-page #bradleyProj {
+#main-page #bradleyProjs {
   height: 500px;
 }
 
@@ -294,7 +294,7 @@
   #main-page .back-project {
     margin-top: -240px;
   }
-  #main-page #bradleyProj {
+  #main-page #bradleyProjs {
     height: 700px;
   }
 }

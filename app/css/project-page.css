@@ -128,6 +128,16 @@
     margin: auto;
 }
 
+.grad-border {
+  height: 2px;
+  width: 50%;
+  background: blue; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, blue , red, blue); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, blue, red, blue); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, blue, red, blue); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, blue , red, blue); /* Standard syntax (must be last) */
+}
+
 @media (max-width: 1224px) {
   .project-page .text-container, .project-page .carousel-container {
   	font-size: 28px;

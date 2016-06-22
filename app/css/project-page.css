@@ -7,6 +7,8 @@
   padding: 10px;
   margin: 10px;
   overflow: auto;
+  width: 75%;
+  margin: 0 auto;
 }
 .project-page .submit-comment {
   margin: 0 auto;
@@ -131,6 +133,7 @@
 .grad-border {
   height: 2px;
   width: 50%;
+  margin: 0 auto;
   background: blue; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left, #333333, #933B4B, #333333); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(right, #333333, #933B4B, #333333); /* For Opera 11.1 to 12.0 */

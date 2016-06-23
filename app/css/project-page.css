@@ -130,7 +130,7 @@
     margin: auto;
 }
 
-.grad-border {
+.project-page .grad-border {
   height: 2px;
   width: 50%;
   margin: 0 auto;
@@ -139,6 +139,10 @@
   background: -o-linear-gradient(right, #333333, #933B4B, #333333); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, #333333, #933B4B, #333333); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right, #333333 , #933B4B, #333333); /* Standard syntax (must be last) */
+}
+
+.project-page #grad-border-top {
+  margin-top: 20px;
 }
 
 @media (max-width: 1224px) {

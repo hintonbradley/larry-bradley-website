@@ -186,7 +186,10 @@
     	width: 80%;
     	margin: 0 auto;
     }
-    .project-page #cyl-bird {
+  .grad-border {
+    width: 80%;
+  }
+  .project-page #cyl-bird {
 		width: 100%;
 }
 
@@ -246,6 +249,9 @@
 	    height: 100px;
 	    margin: 0 auto;
 	}
+  .grad-border {
+    width: 90%;
+  }
 	.project-page .comment-btns {
 	    margin-bottom: 60px;
 	}

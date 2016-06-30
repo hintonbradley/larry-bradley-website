@@ -1,3 +1,4 @@
+// adding express to handle our routing and api calls:
 var express = require('express');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
@@ -34,20 +35,20 @@ app.get('/', function(req, res) {
 var commentsController = require('./server/controllers/comments-controller');
 
 
-// POST COMMENTS
-// Authentication
-// Creating a post request equal to the post route created in the signup-controller (api/user/signup), and then calling the signup function inside the commentsController
+// API CALLS - handled by express
+// Creating get and post requests equal to the get/post routes created in the project-controller (client side), and then calling the get/post functions inside the commentsController (server side)
 app.post('/api/mailboxes/post', commentsController.postMailboxComment);
 app.get('/api/mailboxes/get', commentsController.getMailboxComments);
 app.post('/api/birdhouses/post', commentsController.postBirdhouseComment);
-// (from the birdhouse-controller) defining the get route to grab all the birdhouse comments from the db, and calling getBirdhouseComments function in the comments-controller
 app.get('/api/birdhouses/get', commentsController.getBirdhouseComments);
 app.post('/api/minihouses/post', commentsController.postMinihouseComment);
 app.get('/api/minihouses/get', commentsController.getMinihouseComments);
+app.post('/api/pethouses/post', commentsController.postPethouseComment);
+app.get('/api/pethouses/get', commentsController.getPethouseComments);
 
 // original:
 // app.listen('3000', function(){
-// 	console.log("I'm listening for Larry!");
+// 	console.log("I'm listening");
 // });
 
 // for heroku:

@@ -54,72 +54,50 @@
 			</div>
 		</div>
 		<hr>
-		<div class="container project">
-		  	<div class="row">
-		  		<div class="col-xs-12">
-					<div ng-show="addComment" class="text-ctr leaveComment">
-						<p>Like these pet house designs? Leave a comment below.</p>
-						<button type="button" class="btn bkgd-red white" ng-click="leaveComment()">Leave Comment</button>
-					</div>
-				</div>
-			</div>
+		<div ng-show="addComment" class="text-ctr leaveComment">
+			<p>Like these pethouse designs? Leave a comment below.</p>
+			<button type="button" class="btn bkgd-red white" ng-click="leaveComment()">Leave Comment</button>
 		</div>
-		<div class="container project">
-		  	<div class="row">
-				<div class="col-xs-12">
-					<div ng-show="showFields">
-						<div class="container">
-							<div class="row">
-								<div class="col-sm-3">
+		<div ng-show="showFields">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+					</div>
+					<div class="col-sm-6">
+						<div class="submit-comment">
+							<form name="newComment" novalidate>
+								<div id="errorBox">
+									<div id="regularError" class="alert alert-danger" ng-show="errorMessage">{{errorMessage}}</div>
 								</div>
-								<div class="col-sm-6">
-									<div class="submit-comment">
-										<form name="newComment" novalidate>
-											<div id="errorBox">
-												<div id="regularError" class="alert alert-danger" ng-show="errorMessage">{{errorMessage}}</div>
-											</div>
-											<label>Name:</label>
-											<input class="form-control" type="text" required ng-model="newComment.name" />
-											<label>Comment:</label>
-											<textarea class="form-control" rows="4" required ng-model="newComment.description"></textarea>
-											<div class="comment-btns">
-										    	<button class="btn text-ctr bkgd-red white float-rt" ng-click="sendComment(4, 'pethouses')">Submit</button>
-											    <button class="btn text-ctr bkgd-red white float-rt" ng-click="cancelComment()">Cancel</button>
-											</div>
-										</form>
-									</div>
+								<label>Name:</label>
+								<input class="form-control" type="text" required ng-model="newComment.name" />
+								<label>Comment:</label>
+								<textarea class="form-control" rows="4" required ng-model="newComment.description"></textarea>
+								<div class="comment-btns">
+							    	<button class="btn text-ctr bkgd-red white float-rt" ng-click="sendComment(4, 'pethouses')">Submit</button>
+								    <button class="btn text-ctr bkgd-red white float-rt" ng-click="cancelComment()">Cancel</button>
 								</div>
-								<div class="col-sm-3">
-								</div>
-							</div>
+							</form>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container project">
-		  	<div class="row">
-		  		<div class="col-xs-12">
-					<div ng-show="addedComment" class="addedComment">
-						<p class="text-ctr red">Thank you for your comment.</p>
+					<div class="col-sm-3">
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="container project">
-		  	<div class="row">
-		  		<div class="col-xs-12">
-					<div>
-						<div ng-repeat="comment in comments">
-							<div class="comment bkgd-blue">
-								<span> Posted by: <span class="red">{{comment.name}}</span></span>
-								<span class="white float-rt">{{comment.date | date: 'MM/dd/yyyy hh:mm'}}</span><br>
-								{{comment.description}}
-							</div>
-						</div>
-					</div>
+		<div ng-show="addedComment" class="addedComment">
+			<p class="text-ctr red">Thank you for your comment.</p>
+		</div>
+		<div>
+			<div ng-repeat="comment in comments">
+				<div id="grad-border-top" class="grad-border"></div>
+				<div class="comment white">
+					<span> Posted by: <span class="red">{{comment.name}}</span></span>
+					<span class="red float-rt">{{comment.date | date: 'MM/dd/yyyy hh:mm'}}</span><br>
+					{{comment.description}}
 				</div>
 			</div>
+			<div class="grad-border"></div>
 		</div>
 	</div>
 </div>

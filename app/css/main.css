@@ -472,7 +472,7 @@
   #main-page .lb-about p {
     font-size: 16px;
   }
-    #main-page .flipper {
+  #main-page .flipper {
     width: 100%;
   }
   #main-page .lb-about p {
@@ -547,6 +547,9 @@
   }
   #main-page .main-photo2 {
     max-width: 360px;
+  }
+  #main-page .front p {
+    padding-top: 55px;
   }
 }
 

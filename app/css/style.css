@@ -42,9 +42,9 @@ body {
   float: right;
 }
 
-.garage {
+/*.garage {
   background-image: url(../images/garage/garage.jpg);
-}
+}*/
 
 /*navbar dropdown*/
 .dropdown-toggle {
@@ -98,7 +98,6 @@ z-index: 10000;
   padding-left: 50px;
 }
 
-/*parallax*/
 .container {
   width: 100% !important;
 }

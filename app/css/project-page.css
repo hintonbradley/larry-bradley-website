@@ -190,7 +190,7 @@
     	width: 80%;
     	margin: 0 auto;
     }
-  .grad-border {
+  .project-page .grad-border {
     width: 80%;
   }
   .project-page #cyl-bird {
@@ -215,7 +215,7 @@
 	    width: 200px;
 	    margin: 0 auto;
 	}
-    .project-page .slides-div {
+  .project-page .slides-div {
     margin: 10px 20px;
 	}
 	.project-page .title-header {
@@ -235,12 +235,9 @@
 	.project-page .title-header {
   		font-size: 32px;
   	}
-  	.project-page .text-container {
-	    font-size: 20px;
+	.project-page .text-container {
+    font-size: 20px;
 	}
-/*	.project-page .lf-proj-div, .project-page .rt-proj-div {
-	    height: 250px;
-	}*/
 	.project-page .text-container {
 	    margin-top: 0px;
 	}
@@ -253,7 +250,7 @@
 	    height: 100px;
 	    margin: 0 auto;
 	}
-  .grad-border {
+  .project-page .grad-border {
     width: 90%;
   }
 	.project-page .comment-btns {
@@ -261,8 +258,5 @@
 	}
 	.project-page .leaveComment {
     	margin: 0px 15px 25px 15px;
-    }
-    #main-page .front p {
-    	padding-top: 55px;
     }
 }

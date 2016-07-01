@@ -103,13 +103,13 @@ module.exports.postPethouseComment = function (req, res) {
 }
 
 module.exports.getPethouseComments = function (req, res) {
-	// grabbing all comments that have a project value of 2 (comments made on birdhouses page)
+	// grabbing all comments that have a project value of 4 (comments made on birdhouses page)
 	Comment.find({"project":4})
 	// sorting by date, descending
 		.sort({date: -1})
 		.exec(function(err, allComments) {
 			if (err) {
-				console.log ("there is a birdhouse err: ", err)
+				console.log ("there is a pethouse err: ", err)
 				res.error(err)
 			} else {
 				console.log("all comments from the comments controller are: ", allComments);

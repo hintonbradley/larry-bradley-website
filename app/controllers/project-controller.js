@@ -159,7 +159,7 @@
 				getComments(true, 'minihouses');
 			}
 			else if ($state.$current.includes.pethouses===true) {
-				getComments(true, 'minihouses');
+				getComments(true, 'pethouses');
 			}
 			else {
 				console.log("No state");

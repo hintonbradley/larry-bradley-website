@@ -26,14 +26,14 @@ app.use('/node_modules', express.static(__dirname + "/node_modules"));
 app.use('/bower_components', express.static(__dirname + "/bower_components"));
 app.use('/images', express.static(__dirname + "/app/images"));
 
-// GET REQUESTS
-app.get('/', function(req, res) {
-	res.sendFile(__dirname + '/index.html');
-});
 
 // Requiring controllers:
 var commentsController = require('./server/controllers/comments-controller');
 
+// GET REQUESTS - handled by express
+app.get('/', function(req, res) {
+	res.sendFile(__dirname + '/index.html');
+});
 
 // API CALLS - handled by express
 // Creating get and post requests equal to the get/post routes created in the project-controller (client side), and then calling the get/post functions inside the commentsController (server side)

@@ -1,3 +1,4 @@
+<!-- INDEX.HTML - Creating a mai file that we can use to load all the resources required to build the app. (CSS, Boostrap, jQuery, Angular, Controllers, Angular-Animate, Parallax, etc.) -->
 <!DOCTYPE html>
 <html ng-app='LarryBradley'>
 	<head>
@@ -14,33 +15,8 @@
 		<link rel="stylesheet" type="text/css" href="app/css/style.css">
 		<link rel="stylesheet" type="text/css" href="app/css/main.css">
 		<link rel="stylesheet" type="text/css" href="app/css/project-page.css">
-	</head>
-	<body>
-		<nav class="navbar navbar-fixed-top bkgd-red white">
-			<div class="container-fluid">
-				<div class="navbar-left">
-					<a ui-sref="main" class="navbar-brand white">Bradley Design</a>
-				</div>
-				<div class="navbar-right float-rt bkgd-red">
-		      		<ul>
-		      			<div class="btn-group" dropdown is-open="status.isopen">
-				  			<button type="button" id="nav-btn" class="btn dropdown-toggle bkgd-red white" dropdown-toggle ng-disabled="disabled">Projects<span class="caret"></span>
-							</button>
-							<ul class="dropdown-menu" role="menu">
-							    <li><a ui-sref="birdhouses">Birdhouses</a></li>
-						        <li><a ui-sref="mailboxes">Mailboxes</a></li>
-						        <li><a ui-sref="minihouses">Miniature Houses</a></li>
-						        <li><a ui-sref="pethouses">Pet Houses</a></li>
-							</ul>
-						</div>
-					</ul>
-				</div>
-			</div><!-- /.container-fluid -->
-		</nav>
-		<div ui-view autoscroll="true"></div>
-	</body>
 
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/angular/angular.min.js"></script>
 	<script src="app/app.js"></script>
@@ -65,5 +41,30 @@
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
     <!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular-animate.js"></script> -->
 	<!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"> -->
-
+	</head>
+	<body>
+		<nav class="navbar navbar-fixed-top bkgd-red white">
+			<div class="container-fluid">
+				<div class="navbar-left">
+					<a ui-sref="main" class="navbar-brand white">Bradley Design</a>
+				</div>
+				<div class="navbar-right float-rt bkgd-red">
+		      		<ul>
+		      			<div class="btn-group" dropdown is-open="status.isopen">
+				  			<button type="button" id="nav-btn" class="btn dropdown-toggle bkgd-red white" dropdown-toggle ng-disabled="disabled">Projects<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu">
+							    <li><a ui-sref="birdhouses">Birdhouses</a></li>
+						        <li><a ui-sref="mailboxes">Mailboxes</a></li>
+						        <li><a ui-sref="minihouses">Miniature Houses</a></li>
+						        <li><a ui-sref="pethouses">Pet Houses</a></li>
+							</ul>
+						</div>
+					</ul>
+				</div>
+			</div><!-- /.container-fluid -->
+		</nav>
+		<!-- Adding ui-view so Angular knows where to inject the views. -->
+		<div ui-view autoscroll="true"></div>
+	</body>
 </html>

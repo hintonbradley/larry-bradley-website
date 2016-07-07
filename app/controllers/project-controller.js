@@ -141,6 +141,7 @@
 			// Creating the route for when request is made, which will have to be defined in the server.js file.
 			$http.get('api/' + state + '/get').success(function (response) {
 				if (initial) {
+					console.log("comments are: ", $scope.comments)
 					$scope.comments = response;
 				} else {
 					$scope.incomingComments = response;

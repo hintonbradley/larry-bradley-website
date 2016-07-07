@@ -109,20 +109,17 @@
 				</div>
 			</div>
 		</div>
-		<div class="container project">
-		  	<div class="row">
-		  		<div class="col-xs-12">
-					<div>
-						<div ng-repeat="comment in comments">
-							<div class="comment bkgd-blue">
-								<div class="grad-border"></div>
-									<span> Posted by: <span class="red">{{comment.name}}</span></span>
-									<span class="white float-rt">{{comment.date | date: 'MM/dd/yyyy hh:mm'}}</span><br>
-									{{comment.description}}
-							</div>
-						</div>
-					</div>
+		<div>
+			<div ng-repeat="comment in comments">
+				<div id="grad-border-top" class="grad-border"></div>
+				<div class="comment white">
+					<span> Posted by: <span class="red">{{comment.name}}</span></span>
+					<span class="red float-rt">{{comment.date | date: 'MM/dd/yyyy hh:mm'}}</span><br>
+					{{comment.description}}
 				</div>
+			</div>
+			<div ng-show="comments">
+				<div class="grad-border"></div>
 			</div>
 		</div>
 	</div>

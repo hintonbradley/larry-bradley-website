@@ -17,20 +17,5 @@
 			  //   $scope.status.isopen = !$scope.status.isopen;
 			  // };
 
-			  // $scope.myInterval = 5000;
-			  // var slides = $scope.slides = [
-				 //  {
-				 //  	"image":"app/images/garage/garage.jpg","text":"My Garage","state":"garage", "active":true
-				 //  },
-				 //  {
-				 //  	"image":"app/images/mailboxes/mbx3.jpg","text":"Mailboxes","state":"mailboxes","active":false
-				 //  },
-				 //  {
-				 //  	"image":"app/images/mini-homes/gnomehome.jpg","text":"Miniature Houses","state":"minihouses","active":false
-				 //  },
-				 //  {
-				 //  	"image":"app/images/birdhouses/birdhouse1.png","text":"Birdhouses","state":"birdhouses","active":false
-				 //  }
-				 //  ];
 		}]);
 	}());

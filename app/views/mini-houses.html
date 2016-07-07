@@ -89,13 +89,16 @@
 		</div>
 		<div>
 			<div ng-repeat="comment in comments">
-				<div class="comment bkgd-blue white">
-					<span> Posted by: <span class="white">{{comment.name}}</span></span>
-					<span class="white float-rt">{{comment.date | date: 'MM/dd/yyyy hh:mm'}}</span><br>
+				<div id="grad-border-top" class="grad-border"></div>
+				<div class="comment white">
+					<span> Posted by: <span class="red">{{comment.name}}</span></span>
+					<span class="red float-rt">{{comment.date | date: 'MM/dd/yyyy hh:mm'}}</span><br>
 					{{comment.description}}
 				</div>
+			</div>
+			<div ng-show="comments">
+				<div class="grad-border"></div>
 			</div>
 		</div>
 	</div>
 </div>
-			

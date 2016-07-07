@@ -1,5 +1,6 @@
 // adding express to handle our routing and api calls:
 var express = require('express');
+// Adding Mongoose (a Node library that allows Node to interface with a Mongo db by translating data in the database to JavaScript objects to be used in the app)
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 
@@ -11,6 +12,7 @@ var app = express();
 
 // New code for mLabs:
 var mongodbUri = process.env.MONGODB_URI;
+
 mongoose.connect(mongodbUri);
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'there is a connection error with the mLabs db:'));

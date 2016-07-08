@@ -1,9 +1,6 @@
 /*COMMENTS*/
 .project-page .comment {
-/*  width: 400px;*/
-  height:100px;
-/*  border: solid #B0C1CB 5px;
-  border-radius: 5px;*/
+  height: 75px;
   padding: 10px;
   margin: 10px;
   overflow: auto;

@@ -102,6 +102,7 @@
 		$scope.addComment = true;
 		$scope.errorMessage = false;
 		$scope.addedComment = false;
+		$scope.hasComment = false;
 
 		$scope.leaveComment = function() {
 			$scope.showFields = true;
@@ -141,10 +142,12 @@
 			// Creating the route for when request is made, which will have to be defined in the server.js file.
 			$http.get('api/' + state + '/get').success(function (response) {
 				if (initial) {
-					console.log("comments are: ", $scope.comments)
+					console.log("response is: ", response)
 					$scope.comments = response;
+					$scope.hasComment = response;
 				} else {
 					$scope.incomingComments = response;
+					$scope.hasComment = response;
 				}
 			})
 		};

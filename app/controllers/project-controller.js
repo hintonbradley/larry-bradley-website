@@ -145,9 +145,11 @@
 					console.log("response is: ", response)
 					$scope.comments = response;
 					$scope.hasComment = response;
+					console.log('hasComment[0] is:', $scope.hasComment);
 				} else {
 					$scope.incomingComments = response;
 					$scope.hasComment = response;
+					console.log('hasComment[0] is:', $scope.hasComment);
 				}
 			})
 		};

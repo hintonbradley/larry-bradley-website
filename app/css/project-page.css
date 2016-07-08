@@ -6,6 +6,7 @@
   overflow: auto;
   width: 50%;
   margin: 0 auto;
+  font-size: 20px;
 }
 .project-page .submit-comment {
   margin: 0 auto;
@@ -195,6 +196,9 @@
 }
 
 @media (max-width: 480px) {
+  .project-page .comment {
+  font-size: 16px;
+}
 	.project-page .text-container {
 		font-size: 16px;
 		margin-top: 0px;

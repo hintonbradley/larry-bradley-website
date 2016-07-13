@@ -19,7 +19,7 @@ var Comment = require('../models/comments');
 // New code (async):
 module.exports.postMailboxComment = function (req, res) {
 	var comment = new Comment(req.body);
-	comment.save();
+	comment.save()
 	.then(function(response){
 		if(response._id) {
 			Comment.find({"project":1})
@@ -66,7 +66,7 @@ module.exports.getMailboxComments = function (req, res) {
 // New Code (async):
 module.exports.postBirdhouseComment = function (req, res) {
 	var comment = new Comment(req.body);
-	comment.save();
+	comment.save()
 	.then(function(response){
 		if(response._id) {
 			Comment.find({"project":2})

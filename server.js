@@ -1,7 +1,11 @@
+// Keyword 'require' is used in Node to import modules.
+
 // adding express to handle our routing and api calls:
 var express = require('express');
 // Adding Mongoose (a Node library that allows Node to interface with a Mongo db by translating data in the database to JavaScript objects to be used in the app)
 var mongoose = require('mongoose');
+
+// bodyParser to use when we send data from the front end to the server. 
 var bodyParser = require('body-parser');
 
 var app = express();

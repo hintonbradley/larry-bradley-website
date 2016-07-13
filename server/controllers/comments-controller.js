@@ -1,3 +1,4 @@
+// Requiring Comment model from models directory
 var Comment = require('../models/comments');
 
 module.exports.postMailboxComment = function (req, res) {
@@ -88,18 +89,40 @@ module.exports.getMinihouseComments = function (req, res) {
 		})
 }
 
+// sync (old):
+// module.exports.postPethouseComment = function (req, res) {
+// 	var comment = new Comment(req.body);
+// 	comment.save();
+
+// 	Comment.find({"project":4})
+// 		.sort({date: -1}).exec(function(err, allComments){
+// 		if (err) {
+// 			res.error(error);
+// 		} else {
+// 			res.json(allComments);
+// 		}
+// 	});
+// }
+
+// asycn (new):
 module.exports.postPethouseComment = function (req, res) {
 	var comment = new Comment(req.body);
-	comment.save();
-
-	Comment.find({"project":4})
-		.sort({date: -1}).exec(function(err, allComments){
-		if (err) {
-			res.error(error);
-		} else {
-			res.json(allComments);
+	console.log('the comment is: ', comment);
+	comment.save()
+	.then(function(response){
+		console.log("the response is: ", response);
+		console.log(response._id);
+		if(response._id) {
+			Comment.find({"project":4})
+				.sort({date: -1}).exec(function(err, allComments){
+				if (err) {
+					res.error(error);
+				} else {
+					res.json(allComments);
+				}
+			});
 		}
-	});
+	})
 }
 
 module.exports.getPethouseComments = function (req, res) {

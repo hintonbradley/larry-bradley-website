@@ -1,3 +1,6 @@
+// Wrapping in anonymous function in order prevent global variables from colliding (or to prevent ports from running into each other?) when code is minified.
+
+// Defining angular module. All other additions to the angular module need to begin with 'angular.module('LarryBradley').<new_code>'
 (function() {
 angular.module('LarryBradley', ['ui.router','angular-parallax','ui.bootstrap','ngAnimate'])
 	.config(function($stateProvider, $urlRouterProvider) {

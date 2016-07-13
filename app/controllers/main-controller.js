@@ -1,3 +1,6 @@
+// Wrapping in anonymous function in order prevent collisions
+
+// Adding additional code (controller) to the Angular module 'LarryBradley' 
 (function() {
 	//We're adding data to the angular module so it must begin with angular.module
 		angular.module('LarryBradley')

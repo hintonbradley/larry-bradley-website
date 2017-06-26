@@ -1,7 +1,7 @@
 // Requiring Comment model from models directory
 var Comment = require('../models/comments');
 
-// Old code (sync):
+// Old code (synchronous):
 // module.exports.postMailboxComment = function (req, res) {
 // 	var comment = new Comment(req.body);
 // 	comment.save();
@@ -16,7 +16,7 @@ var Comment = require('../models/comments');
 // 	});
 // }
 
-// New code (async):
+// New code (asynchronous):
 module.exports.postMailboxComment = function (req, res) {
 	var comment = new Comment(req.body);
 	comment.save()

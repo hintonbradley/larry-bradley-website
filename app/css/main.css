@@ -214,7 +214,7 @@
 }
 
 #main-page .back p {
-  font-size: 24px;
+  font-size: 1em;
   text-shadow: none !important;
   z-index: 5;
   width: 100%;
@@ -289,7 +289,7 @@
     margin-bottom: 50px;
   }
   #main-page .back p {
-  font-size: 16px;
+  font-size: 1em;
   }
   #main-page #mailbox-proj-title p {
     padding-top: 20px;
@@ -307,7 +307,7 @@
     font-size: 20px;
   }
   #main-page .back p {
-    font-size: 14px !important;
+    font-size: 1em;
   }
   #main-page .flip-proj {
   padding-left: 15px;
@@ -536,7 +536,7 @@
     margin-top: -175px;
   }
   #main-page .back p {
-    font-size: 12px !important;
+    font-size: 1em;
   }
   #main-page .lb-about p {
     margin: 0px 10px;

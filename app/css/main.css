@@ -288,9 +288,6 @@
   #main-page .flip-proj {
     margin-bottom: 50px;
   }
-  #main-page .back p {
-  font-size: 1em;
-  }
   #main-page #mailbox-proj-title p {
     padding-top: 20px;
   }
@@ -383,6 +380,9 @@
   }
   #main-page .name p {
     font-size: 4em;
+  }
+  #main-page .name .back p {
+    font-size: 2vw;
   }
   #main-page .small-lbphoto {
     height: 400px;
@@ -534,9 +534,6 @@
   #main-page .back-project {
     height: 175px;
     margin-top: -175px;
-  }
-  #main-page .back p {
-    font-size: 1em;
   }
   #main-page .lb-about p {
     margin: 0px 10px;

@@ -510,6 +510,9 @@
   #main-page .name p {
     font-size: 3em;
   }
+  #main-page .name .back p {
+    font-size: 3em;
+  }
   #main-page .inline-block li {
     padding-left: 10px;
     padding-right: 10px;

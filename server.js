@@ -12,10 +12,10 @@ var app = express();
 
 //CONNECT TO DATABASE:
 // Old code (post mLabs):
-mongoose.connect('mongodb://localhost:27017/larrybradley');
+// mongoose.connect('mongodb://localhost:27017/larrybradley');
 
 // New code for mLabs:
-// var mongodbUri = process.env.MONGODB_URI;
+var mongodbUri = process.env.MONGODB_URI;
 
 // mongoose.connect(mongodbUri);
 var db = mongoose.connection;
